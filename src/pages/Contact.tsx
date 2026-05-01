@@ -48,6 +48,12 @@ const Contact = () => {
           </button>
         </div>
 
+        <div className="max-w-2xl mb-10">
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Need help with your <strong className="text-foreground">khelo24login online platform</strong> account? Whether it's about <strong className="text-foreground">live cricket betting</strong>, <strong className="text-foreground">Aviator crash game</strong>, <strong className="text-foreground">Teen Patti online</strong>, deposits, or <strong className="text-foreground">fast withdrawal betting</strong> — our team is available 24x7 on WhatsApp. We're proud to be among the <strong className="text-foreground">safe online sports betting websites 2026</strong> with dedicated multilingual support.
+          </p>
+        </div>
+
         <div className="text-center">
           <Button onClick={openWA} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold">
             <MessageCircle className="h-5 w-5 mr-2" /> Chat on WhatsApp Now

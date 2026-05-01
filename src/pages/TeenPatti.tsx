@@ -39,7 +39,16 @@ const TeenPatti = () => {
             </Button>
           </div>
         </div>
-      </section>
+
+        <div className="max-w-3xl">
+          <h2 className="text-xl md:text-2xl font-bold mb-3">Play Teen Patti on Khelo24Login.live</h2>
+          <p className="text-muted-foreground leading-relaxed mb-3">
+            <strong className="text-foreground">Teen Patti online</strong> on <strong className="text-foreground">khelo24login.live</strong> brings India's favourite card game to your fingertips. Our <strong className="text-foreground">khelo24login online platform</strong> features live dealers, instant deposits via UPI, and <strong className="text-foreground">fast withdrawal betting</strong> so you never have to wait for your winnings.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            As one of the <strong className="text-foreground">safe online sports betting websites 2026</strong>, we offer a <strong className="text-foreground">mobile friendly sports betting platform</strong> where you can enjoy Teen Patti 24/7 in Hindi, English, Telugu and Tamil. Get your <strong className="text-foreground">free cricket ID</strong> and access all games including Teen Patti, Andar Bahar, and more.
+          </p>
+        </div>
       <Footer />
       <FloatingWhatsApp />
     </main>

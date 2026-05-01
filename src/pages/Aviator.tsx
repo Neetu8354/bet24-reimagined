@@ -53,12 +53,21 @@ const Aviator = () => {
           ))}
         </div>
 
-        <div className="bg-card/50 border border-border rounded-2xl p-6 md:p-10 text-center max-w-2xl mx-auto">
+        <div className="bg-card/50 border border-border rounded-2xl p-6 md:p-10 text-center max-w-2xl mx-auto mb-10">
           <h3 className="text-lg md:text-xl font-bold mb-2">How to Win Aviator 10x with Khelo24Login.live</h3>
           <p className="text-muted-foreground text-sm mb-6">Master the timing, use our live stats dashboard, and join thousands of winners every day.</p>
           <Button onClick={openWA} size="lg" className="bg-gradient-gold text-gold-foreground font-bold">
             <MessageCircle className="h-5 w-5 mr-2" /> Play Aviator Now
           </Button>
+        </div>
+
+        <div className="max-w-3xl mx-auto">
+          <p className="text-muted-foreground leading-relaxed mb-3">
+            The <strong className="text-foreground">Aviator crash game</strong> on <strong className="text-foreground">khelo24login.live</strong> is one of the most popular instant-win games in India. Our <strong className="text-foreground">khelo24login online platform</strong> offers real-time multiplier tracking, auto cash-out features, and provably fair gameplay that makes us stand out among <strong className="text-foreground">safe online sports betting websites 2026</strong>.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Whether you're a beginner learning how to play or a pro chasing 100x multipliers, Khelo24Login.live delivers the best Aviator experience on any <strong className="text-foreground">mobile friendly sports betting platform</strong>. With <strong className="text-foreground">fast withdrawal betting</strong> and 24x7 support, you can play confidently and cash out instantly.
+          </p>
         </div>
       </section>
       <Footer />
