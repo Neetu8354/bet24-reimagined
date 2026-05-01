@@ -9,8 +9,25 @@ const FAQS = [
   { q: "Is customer support available 24/7?", a: "Yes, our WhatsApp chat support runs 24x7 in Hindi, English, Telugu and Tamil." },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQS.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: f.a,
+    },
+  })),
+};
+
 export const FAQ = () => (
   <section className="container py-10 md:py-14">
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+    />
     <div className="text-center mb-8">
       <h2 className="text-2xl md:text-4xl font-black">Frequently Asked <span className="text-gradient-gold">Questions</span></h2>
     </div>
