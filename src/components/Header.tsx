@@ -9,13 +9,13 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-xl">
-      <div className="container flex h-14 sm:h-16 items-center justify-between gap-2 sm:gap-4">
-        <button onClick={openWA} className="flex items-center gap-2 group min-w-0" aria-label="Khelo24Bet home">
-          <div className="flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg bg-gradient-neon shadow-glow shrink-0">
+      <div className="container flex h-14 sm:h-16 md:h-18 lg:h-20 items-center justify-between gap-2 sm:gap-4">
+        <button onClick={openWA} className="flex items-center gap-2 md:gap-3 group min-w-0" aria-label="Khelo24Bet home">
+          <div className="flex h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 items-center justify-center rounded-lg bg-gradient-neon shadow-glow shrink-0">
             <span className="font-black text-xs sm:text-sm text-primary-foreground">K24</span>
           </div>
           <div className="flex flex-col leading-none min-w-0">
-            <span className="font-black text-base sm:text-lg tracking-tight truncate">
+            <span className="font-black text-base sm:text-lg md:text-xl tracking-tight truncate">
               <span className="text-primary">Khelo</span>
               <span className="text-secondary">24Bet</span>
             </span>
