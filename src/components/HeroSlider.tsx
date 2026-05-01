@@ -1,0 +1,77 @@
+import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { openWA } from "@/lib/wa";
+import { ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
+import hero from "@/assets/hero-cricket.jpg";
+import promoFantasy from "@/assets/promo-fantasy.jpg";
+import promoLive from "@/assets/promo-live.jpg";
+import promoArcade from "@/assets/promo-arcade.jpg";
+
+const SLIDES = [
+  { img: hero, eyebrow: "IPL 2026 LIVE", title: "Cricket. Live. Unmissable.", sub: "Join the biggest cricket community on WhatsApp. Get instant updates, predictions and exclusive bonuses." },
+  { img: promoFantasy, eyebrow: "FANTASY CRICKET", title: "Pick Your XI. Win ₹10 Lakh.", sub: "Daily fantasy contests on every match. Skill-based scoring, instant results." },
+  { img: promoLive, eyebrow: "LIVE SCORES", title: "Every Ball. Every Moment.", sub: "Real-time scoreboards, ball-by-ball commentary and ML-powered predictions." },
+  { img: promoArcade, eyebrow: "PREMIUM CASINO", title: "Andar Bahar • Teen Patti • Roulette", sub: "Authentic Indian casino games with live dealers, 24/7 in INR." },
+];
+
+export const HeroSlider = () => {
+  const [i, setI] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setI((p) => (p + 1) % SLIDES.length), 5500);
+    return () => clearInterval(t);
+  }, []);
+  const s = SLIDES[i];
+  return (
+    <section className="relative w-full overflow-hidden">
+      <div className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[560px] w-full">
+        {SLIDES.map((sl, idx) => (
+          <img
+            key={idx}
+            src={sl.img}
+            alt={sl.title}
+            width={1920}
+            height={800}
+            loading={idx === 0 ? "eager" : "lazy"}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${idx === i ? "opacity-100" : "opacity-0"}`}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-background/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+
+        <div className="container relative z-10 flex h-full items-center">
+          <div className="max-w-2xl space-y-5 animate-float">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 border border-secondary/40 text-secondary text-xs font-bold tracking-widest">
+              <span className="h-2 w-2 rounded-full bg-secondary animate-pulse" /> {s.eyebrow}
+            </span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
+              {s.title.split(" ").map((w, k) => (
+                <span key={k} className={k % 3 === 1 ? "text-gradient-gold" : ""}>{w} </span>
+              ))}
+            </h1>
+            <p className="text-base md:text-lg text-muted-foreground max-w-xl">{s.sub}</p>
+            <div className="flex flex-wrap gap-3 pt-2">
+              <Button onClick={openWA} size="lg" className="bg-gradient-gold text-gold-foreground hover:opacity-90 shadow-gold font-bold text-base">
+                <MessageCircle className="h-5 w-5 mr-2" /> Get ID on WhatsApp
+              </Button>
+              <Button onClick={openWA} size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary/10 font-bold">
+                Claim ₹15,000 Bonus
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        <button onClick={() => setI((p) => (p - 1 + SLIDES.length) % SLIDES.length)} className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 h-10 w-10 rounded-full bg-background/60 backdrop-blur border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Previous">
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+        <button onClick={() => setI((p) => (p + 1) % SLIDES.length)} className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 h-10 w-10 rounded-full bg-background/60 backdrop-blur border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Next">
+          <ChevronRight className="h-5 w-5" />
+        </button>
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+          {SLIDES.map((_, idx) => (
+            <button key={idx} onClick={() => setI(idx)} className={`h-1.5 rounded-full transition-all ${idx === i ? "w-8 bg-primary" : "w-2 bg-muted-foreground/40"}`} aria-label={`Slide ${idx + 1}`} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
