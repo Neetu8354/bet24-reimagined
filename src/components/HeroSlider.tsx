@@ -49,7 +49,7 @@ export const HeroSlider = () => {
               ))}
             </h1>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-xl">{s.sub}</p>
-            <div className="flex flex-col gap-2 pt-1 max-w-[280px] mx-auto items-center">
+            <div className="flex flex-col gap-4 pt-2 max-w-[280px] mx-auto items-center">
               <Button onClick={openWA} size="lg" className="w-full bg-gradient-gold text-gold-foreground hover:opacity-90 shadow-gold font-bold text-base sm:text-lg rounded-2xl h-12">
                 Play Now <ArrowRight className="h-5 w-5 ml-1" />
               </Button>
