@@ -43,7 +43,7 @@ export const Footer = () => (
             <span className="font-black text-sm text-primary-foreground">K24</span>
           </div>
           <span className="font-black text-lg">
-            <span className="text-primary">Khelo24</span><span className="text-secondary">Login</span>
+            <span className="text-primary">Khelo24</span><span className="text-secondary">App</span>
           </span>
         </Link>
         <p className="text-sm text-muted-foreground mb-4">India's most trusted online sports gaming platform. WhatsApp-first, INR-only, instant payouts.</p>
@@ -70,7 +70,7 @@ export const Footer = () => (
     </div>
     <div className="border-t border-border">
       <div className="container py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-        <p>© {new Date().getFullYear()} Khelo24Login.live. 18+ only. Play responsibly.</p>
+        <p>© {new Date().getFullYear()} Khelo24App.live. 18+ only. Play responsibly.</p>
         <p>Contact via WhatsApp • 24x7 Support</p>
       </div>
     </div>

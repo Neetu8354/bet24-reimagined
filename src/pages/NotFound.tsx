@@ -21,10 +21,10 @@ const NotFound = () => {
   const location = useLocation();
 
   useSeo({
-    title: "Page Not Found — Khelo24Login.live",
-    description: "The page you're looking for doesn't exist. Browse our games, betting guides, or contact 24x7 support on Khelo24Login.live.",
+    title: "Page Not Found — Khelo24App.live",
+    description: "The page you're looking for doesn't exist. Browse our games, betting guides, or contact 24x7 support on Khelo24App.live.",
     canonical: "/404",
-    keywords: "khelo24login, page not found, 404",
+    keywords: "khelo24app, page not found, 404",
   });
 
   useEffect(() => {
