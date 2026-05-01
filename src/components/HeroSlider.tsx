@@ -53,9 +53,6 @@ export const HeroSlider = () => {
               <Button onClick={openWA} size="default" className="w-full bg-gradient-gold text-gold-foreground hover:opacity-90 shadow-gold font-bold text-sm sm:text-base">
                 <MessageCircle className="h-4 w-4 mr-2" /> Get ID on WhatsApp
               </Button>
-              <Button onClick={openWA} size="default" variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary/10 font-bold text-sm sm:text-base">
-                Claim ₹15,000 Bonus
-              </Button>
             </div>
           </div>
         </div>
