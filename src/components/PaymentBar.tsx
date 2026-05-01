@@ -11,7 +11,7 @@ const METHODS = [
 
 export const PaymentBar = () => (
   <section className="container py-10">
-    <div className="rounded-xl border border-border bg-card/40 p-5">
+    <div className="rounded-xl border border-border bg-card/40 p-4 sm:p-5 overflow-x-auto">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
           <h3 className="font-black text-lg">Deposit & Withdraw in <span className="text-gradient-gold">INR ₹</span></h3>

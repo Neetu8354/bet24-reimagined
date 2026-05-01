@@ -23,7 +23,7 @@ export const HeroSlider = () => {
   const s = SLIDES[i];
   return (
     <section className="relative w-full overflow-hidden">
-      <div className="relative h-[60vh] min-h-[420px] md:h-[72vh] md:min-h-[560px] w-full">
+      <div className="relative h-[78vh] min-h-[520px] sm:h-[68vh] md:h-[72vh] md:min-h-[560px] w-full">
         {SLIDES.map((sl, idx) => (
           <img
             key={idx}
@@ -35,35 +35,35 @@ export const HeroSlider = () => {
             className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${idx === i ? "opacity-100" : "opacity-0"}`}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-background/20" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/75 to-background/30 md:to-background/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 md:via-transparent to-transparent" />
 
-        <div className="container relative z-10 flex h-full items-center">
-          <div className="max-w-2xl space-y-5 animate-float">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 border border-secondary/40 text-secondary text-xs font-bold tracking-widest">
+        <div className="container relative z-10 flex h-full items-center pb-16 md:pb-0">
+          <div className="max-w-2xl space-y-4 md:space-y-5 animate-float">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 border border-secondary/40 text-secondary text-[10px] sm:text-xs font-bold tracking-widest">
               <span className="h-2 w-2 rounded-full bg-secondary animate-pulse" /> {s.eyebrow}
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
               {s.title.split(" ").map((w, k) => (
                 <span key={k} className={k % 3 === 1 ? "text-gradient-gold" : ""}>{w} </span>
               ))}
             </h1>
-            <p className="text-base md:text-lg text-muted-foreground max-w-xl">{s.sub}</p>
-            <div className="flex flex-wrap gap-3 pt-2">
-              <Button onClick={openWA} size="lg" className="bg-gradient-gold text-gold-foreground hover:opacity-90 shadow-gold font-bold text-base">
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-xl">{s.sub}</p>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
+              <Button onClick={openWA} size="lg" className="bg-gradient-gold text-gold-foreground hover:opacity-90 shadow-gold font-bold text-sm sm:text-base w-full sm:w-auto">
                 <MessageCircle className="h-5 w-5 mr-2" /> Get ID on WhatsApp
               </Button>
-              <Button onClick={openWA} size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary/10 font-bold">
+              <Button onClick={openWA} size="lg" variant="outline" className="border-primary/50 text-primary hover:bg-primary/10 font-bold w-full sm:w-auto">
                 Claim ₹15,000 Bonus
               </Button>
             </div>
           </div>
         </div>
 
-        <button onClick={() => setI((p) => (p - 1 + SLIDES.length) % SLIDES.length)} className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 h-10 w-10 rounded-full bg-background/60 backdrop-blur border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Previous">
+        <button onClick={() => setI((p) => (p - 1 + SLIDES.length) % SLIDES.length)} className="hidden sm:flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 h-10 w-10 rounded-full bg-background/60 backdrop-blur border border-border items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Previous">
           <ChevronLeft className="h-5 w-5" />
         </button>
-        <button onClick={() => setI((p) => (p + 1) % SLIDES.length)} className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 h-10 w-10 rounded-full bg-background/60 backdrop-blur border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Next">
+        <button onClick={() => setI((p) => (p + 1) % SLIDES.length)} className="hidden sm:flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 h-10 w-10 rounded-full bg-background/60 backdrop-blur border border-border items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Next">
           <ChevronRight className="h-5 w-5" />
         </button>
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">

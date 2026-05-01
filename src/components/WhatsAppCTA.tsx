@@ -18,7 +18,7 @@ export const WhatsAppCTA = () => (
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 border border-accent/40 text-accent text-xs font-bold tracking-widest mb-4">
             <MessageCircle className="h-3 w-3" /> WHATSAPP CHATBOT
           </span>
-          <h2 className="text-3xl md:text-5xl font-black leading-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-black leading-tight mb-3">
             Chat with our <span className="text-gradient-gold">AI Bot</span> on WhatsApp
           </h2>
           <p className="text-muted-foreground mb-6">

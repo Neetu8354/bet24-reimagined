@@ -27,7 +27,7 @@ export const LiveScores = () => (
               {m.status === "LIVE" && <Radio className="h-3 w-3 animate-pulse" />}
               {m.status}
             </span>
-            <span className="text-xs text-muted-foreground">{m.venue}</span>
+            <span className="text-[10px] sm:text-xs text-muted-foreground truncate ml-2 max-w-[55%] text-right">{m.venue}</span>
           </div>
           <div className="space-y-3 mb-4">
             <div className="flex items-center justify-between">
