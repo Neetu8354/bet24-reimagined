@@ -4,19 +4,16 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import blogImg from "@/assets/card-livecricket.jpg";
 
 const BlogHowToUse = () => {
-  useEffect(() => {
-    document.title = "How to Use Khelo24Login Online | Complete Guide 2026";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Learn how to use khelo24login online platform. Step by step guide to access the best online sports gaming platform and start playing instantly.");
-  }, []);
+  useSeo({
+    title: "How to Use Khelo24Login Online | Complete Guide 2026",
+    description: "Learn how to use khelo24login online platform. Step by step guide to access the best online sports gaming platform and start playing instantly.",
+    canonical: "/blog/how-to-use-khelo24login-online",
+    keywords: "how to use khelo24login, khelo24login guide, online sports platform",
+  });
 
   return (
     <main>

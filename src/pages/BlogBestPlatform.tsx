@@ -4,19 +4,16 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import blogImg from "@/assets/card-fantasy.jpg";
 
 const BlogBestPlatform = () => {
-  useEffect(() => {
-    document.title = "Best Online Sports Betting Platform for Beginners 2026 | Khelo24Login";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Looking for the best online sports betting platform for beginners? Khelo24Login.live is India's easiest platform with free ID, fast payouts and 24x7 support.");
-  }, []);
+  useSeo({
+    title: "Best Online Sports Betting Platform for Beginners 2026 | Khelo24Login",
+    description: "Looking for the best online sports betting platform for beginners? Khelo24Login.live is India's easiest platform with free ID, fast payouts and 24x7 support.",
+    canonical: "/blog/best-online-sports-betting-platform-for-beginners",
+    keywords: "best betting platform beginners, online sports betting, khelo24login beginners",
+  });
 
   return (
     <main>

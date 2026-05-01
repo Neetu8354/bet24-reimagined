@@ -4,7 +4,7 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Rocket, Target, Gift } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import aviatorImg from "@/assets/promo-arcade.jpg";
 import aviatorImg2 from "@/assets/card-roulette.jpg";
 
@@ -15,15 +15,12 @@ const STEPS = [
 ];
 
 const Aviator = () => {
-  useEffect(() => {
-    document.title = "Play Aviator on Khelo24Login.live | Crash Game";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Play Aviator crash game on Khelo24Login.live and win big with smart cash outs.");
-  }, []);
+  useSeo({
+    title: "Play Aviator on Khelo24Login.live | Crash Game",
+    description: "Play Aviator crash game on Khelo24Login.live and win big with smart cash outs.",
+    canonical: "/aviator",
+    keywords: "aviator game online, crash game, khelo24login aviator, play aviator",
+  });
 
   return (
     <main>

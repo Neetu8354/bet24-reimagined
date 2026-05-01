@@ -4,7 +4,7 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, TrendingUp, Trophy, BarChart3 } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import cardLive from "@/assets/card-livecricket.jpg";
 
 const TIPS = [
@@ -14,15 +14,12 @@ const TIPS = [
 ];
 
 const Cricket = () => {
-  useEffect(() => {
-    document.title = "Live Cricket Betting on Khelo24Login.live | Best Odds";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Bet on live cricket matches online at Khelo24Login.live with competitive odds and fast payouts.");
-  }, []);
+  useSeo({
+    title: "Live Cricket Betting on Khelo24Login.live | Best Odds",
+    description: "Bet on live cricket matches online at Khelo24Login.live with competitive odds and fast payouts.",
+    canonical: "/cricket",
+    keywords: "live cricket betting, cricket betting online, khelo24login cricket, best cricket odds",
+  });
 
   return (
     <main>

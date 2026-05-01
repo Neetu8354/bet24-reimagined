@@ -4,19 +4,16 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import blogImg from "@/assets/card-prediction.jpg";
 
 const BlogHowToJoin = () => {
-  useEffect(() => {
-    document.title = "How to Join Online Sports Gaming Website 2026 | Khelo24Login.live";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Complete guide on how to join online sports gaming website Khelo24Login.live. Get free cricket ID, deposit via UPI, and start playing instantly.");
-  }, []);
+  useSeo({
+    title: "How to Join Online Sports Gaming Website 2026 | Khelo24Login.live",
+    description: "Complete guide on how to join online sports gaming website Khelo24Login.live. Get free cricket ID, deposit via UPI, and start playing instantly.",
+    canonical: "/blog/how-to-join-online-sports-gaming-website",
+    keywords: "join sports gaming website, free cricket id, khelo24login join",
+  });
 
   return (
     <main>

@@ -4,19 +4,16 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import blogImg from "@/assets/card-prediction.jpg";
 
 const BlogCricketPrediction = () => {
-  useEffect(() => {
-    document.title = "Best Cricket Prediction Sites Online 2026 | Khelo24Login.live";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Find the best cricket prediction sites online in 2026. Khelo24Login.live offers ML-powered predictions, live odds and expert analysis.");
-  }, []);
+  useSeo({
+    title: "Best Cricket Prediction Sites Online 2026 | Khelo24Login.live",
+    description: "Find the best cricket prediction sites online in 2026. Khelo24Login.live offers ML-powered predictions, live odds and expert analysis.",
+    canonical: "/blog/best-cricket-prediction-sites-online",
+    keywords: "cricket prediction sites, best prediction 2026, cricket betting predictions",
+  });
 
   return (
     <main>

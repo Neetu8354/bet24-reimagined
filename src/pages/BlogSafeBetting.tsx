@@ -4,19 +4,16 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import blogImg from "@/assets/promo-live.jpg";
 
 const BlogSafeBetting = () => {
-  useEffect(() => {
-    document.title = "Safe Online Sports Betting Websites 2026 | Khelo24Login.live";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Discover safe online sports betting websites in 2026. Khelo24Login.live offers secure transactions, verified gameplay and fast withdrawals.");
-  }, []);
+  useSeo({
+    title: "Safe Online Sports Betting Websites 2026 | Khelo24Login.live",
+    description: "Discover safe online sports betting websites in 2026. Khelo24Login.live offers secure transactions, verified gameplay and fast withdrawals.",
+    canonical: "/blog/safe-online-sports-betting-websites-2026",
+    keywords: "safe betting websites, secure sports betting, trusted betting platform",
+  });
 
   return (
     <main>

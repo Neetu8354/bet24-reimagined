@@ -4,19 +4,16 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import cardTeen from "@/assets/card-teenpatti.jpg";
 
 const TeenPatti = () => {
-  useEffect(() => {
-    document.title = "Play Teen Patti Online on Khelo24Login.live";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Enjoy Teen Patti online on Khelo24Login.live - India's favourite card game.");
-  }, []);
+  useSeo({
+    title: "Play Teen Patti Online on Khelo24Login.live",
+    description: "Enjoy Teen Patti online on Khelo24Login.live - India's favourite card game.",
+    canonical: "/teen-patti",
+    keywords: "teen patti online, khelo24login teen patti, play teen patti, indian card game",
+  });
 
   return (
     <main>

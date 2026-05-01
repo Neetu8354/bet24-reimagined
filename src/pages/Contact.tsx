@@ -4,18 +4,15 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Headphones, MessagesSquare } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 
 const Contact = () => {
-  useEffect(() => {
-    document.title = "Contact Us – Khelo24Login.live | 24x7 Support";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Get 24x7 support for login, deposits, withdrawals and games on Khelo24Login.live.");
-  }, []);
+  useSeo({
+    title: "Contact Us – Khelo24Login.live | 24x7 Support",
+    description: "Get 24x7 support for login, deposits, withdrawals and games on Khelo24Login.live.",
+    canonical: "/contact",
+    keywords: "khelo24login contact, 24x7 support, betting support, customer service",
+  });
 
   return (
     <main>

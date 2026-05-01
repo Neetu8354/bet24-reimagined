@@ -4,19 +4,16 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import blogImg from "@/assets/promo-fantasy.jpg";
 
 const BlogMobileFriendly = () => {
-  useEffect(() => {
-    document.title = "Mobile Friendly Sports Betting Platforms 2026 | Khelo24Login.live";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Discover the best mobile friendly sports betting platforms in 2026. Khelo24Login.live works perfectly on all phones with no app download needed.");
-  }, []);
+  useSeo({
+    title: "Mobile Friendly Sports Betting Platforms 2026 | Khelo24Login.live",
+    description: "Discover the best mobile friendly sports betting platforms in 2026. Khelo24Login.live works perfectly on all phones with no app download needed.",
+    canonical: "/blog/mobile-friendly-sports-betting-platforms",
+    keywords: "mobile betting platform, mobile friendly betting, khelo24login mobile",
+  });
 
   return (
     <main>

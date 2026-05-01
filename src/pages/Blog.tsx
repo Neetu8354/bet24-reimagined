@@ -1,19 +1,16 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import blogImg from "@/assets/card-fantasy.jpg";
 
 const Blog = () => {
-  useEffect(() => {
-    document.title = "How to Login Khelo24Login Step by Step Guide 2026";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Complete step by step guide on how to login khelo24login with username.");
-  }, []);
+  useSeo({
+    title: "How to Login Khelo24Login Step by Step Guide 2026",
+    description: "Complete step by step guide on how to login khelo24login with username.",
+    canonical: "/blog/how-to-login-khelo24login",
+    keywords: "khelo24login login, how to login khelo24login, khelo24login guide",
+  });
 
   return (
     <main>

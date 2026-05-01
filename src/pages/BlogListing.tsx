@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import { ArrowRight } from "lucide-react";
 
 const BLOGS = [
@@ -19,15 +19,12 @@ const BLOGS = [
 ];
 
 const BlogListing = () => {
-  useEffect(() => {
-    document.title = "Blog — Khelo24Login.live | Sports Gaming Tips & Guides";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Read the latest tips, guides and strategies for online sports gaming on Khelo24Login.live. Cricket betting tips, Aviator strategies, login guides and more.");
-  }, []);
+  useSeo({
+    title: "Blog — Khelo24Login.live | Sports Gaming Tips & Guides",
+    description: "Read the latest tips, guides and strategies for online sports gaming on Khelo24Login.live. Cricket betting tips, Aviator strategies, login guides and more.",
+    canonical: "/blog",
+    keywords: "sports betting blog, cricket betting tips, online gaming guides",
+  });
 
   return (
     <main>

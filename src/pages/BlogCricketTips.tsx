@@ -4,19 +4,16 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import blogImg from "@/assets/card-livecricket.jpg";
 
 const BlogCricketTips = () => {
-  useEffect(() => {
-    document.title = "Live Cricket Betting Tips Online 2026 | Khelo24Login.live";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Get the best live cricket betting tips online for 2026. Expert predictions, match analysis and winning strategies on Khelo24Login.live.");
-  }, []);
+  useSeo({
+    title: "Live Cricket Betting Tips Online 2026 | Khelo24Login.live",
+    description: "Get the best live cricket betting tips online for 2026. Expert predictions, match analysis and winning strategies on Khelo24Login.live.",
+    canonical: "/blog/live-cricket-betting-tips-online",
+    keywords: "cricket betting tips, live cricket tips, betting predictions 2026",
+  });
 
   return (
     <main>

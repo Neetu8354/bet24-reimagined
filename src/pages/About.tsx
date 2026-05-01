@@ -4,7 +4,7 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Smartphone, Zap, Headphones, MessageCircle } from "lucide-react";
-import { useEffect } from "react";
+import { useSeo } from "@/hooks/use-seo";
 import aboutImg from "@/assets/promo-live.jpg";
 
 const FEATURES = [
@@ -15,15 +15,12 @@ const FEATURES = [
 ];
 
 const About = () => {
-  useEffect(() => {
-    document.title = "About Us – Khelo24Login.live | Trusted Online Sports Gaming Platform";
-    const setMeta = (name: string, content: string) => {
-      let el = document.querySelector(`meta[name="${name}"]`);
-      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
-      el.setAttribute("content", content);
-    };
-    setMeta("description", "Khelo24Login.live is a safe and reliable online sports gaming platform in India with fast payouts and 24x7 support.");
-  }, []);
+  useSeo({
+    title: "About Us – Khelo24Login.live | Trusted Online Sports Gaming Platform",
+    description: "Khelo24Login.live is a safe and reliable online sports gaming platform in India with fast payouts and 24x7 support.",
+    canonical: "/about",
+    keywords: "khelo24login about, online sports gaming platform india, safe betting platform",
+  });
 
   return (
     <main>
