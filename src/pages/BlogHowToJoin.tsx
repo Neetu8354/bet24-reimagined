@@ -5,6 +5,7 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
+import { BlogPostingSchema } from "@/components/BlogPostingSchema";
 import blogImg from "@/assets/card-prediction.jpg";
 
 const BlogHowToJoin = () => {
@@ -18,6 +19,7 @@ const BlogHowToJoin = () => {
   return (
     <main>
       <Header />
+      <BlogPostingSchema title="How to Join Online Sports Gaming Website 2026" description="Get free cricket ID, deposit via UPI, and start playing instantly." slug="/blog/how-to-join-online-sports-gaming-website" />
       <article className="container py-12 md:py-20 max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6">
           How to Join Online <span className="text-gradient-gold">Sports Gaming Website</span> in 2026

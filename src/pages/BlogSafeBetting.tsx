@@ -5,6 +5,7 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
+import { BlogPostingSchema } from "@/components/BlogPostingSchema";
 import blogImg from "@/assets/promo-live.jpg";
 
 const BlogSafeBetting = () => {
@@ -18,6 +19,7 @@ const BlogSafeBetting = () => {
   return (
     <main>
       <Header />
+      <BlogPostingSchema title="Safe Online Sports Betting Websites 2026" description="Secure transactions, verified gameplay and fast withdrawals." slug="/blog/safe-online-sports-betting-websites-2026" />
       <article className="container py-12 md:py-20 max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6">
           Safe Online Sports Betting <span className="text-gradient-gold">Websites 2026</span>

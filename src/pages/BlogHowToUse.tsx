@@ -5,6 +5,7 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
+import { BlogPostingSchema } from "@/components/BlogPostingSchema";
 import blogImg from "@/assets/card-livecricket.jpg";
 
 const BlogHowToUse = () => {
@@ -18,6 +19,7 @@ const BlogHowToUse = () => {
   return (
     <main>
       <Header />
+      <BlogPostingSchema title="How to Use Khelo24Login Online | Complete Guide 2026" description="Learn how to use khelo24login online platform and start playing instantly." slug="/blog/how-to-use-khelo24login-online" />
       <article className="container py-12 md:py-20 max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6">
           How to Use <span className="text-gradient-gold">Khelo24Login Online</span> — Complete Guide 2026

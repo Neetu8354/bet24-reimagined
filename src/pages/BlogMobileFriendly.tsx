@@ -5,6 +5,7 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
+import { BlogPostingSchema } from "@/components/BlogPostingSchema";
 import blogImg from "@/assets/promo-fantasy.jpg";
 
 const BlogMobileFriendly = () => {
@@ -18,6 +19,7 @@ const BlogMobileFriendly = () => {
   return (
     <main>
       <Header />
+      <BlogPostingSchema title="Mobile Friendly Sports Betting Platforms 2026" description="Works perfectly on all phones with no app download needed." slug="/blog/mobile-friendly-sports-betting-platforms" />
       <article className="container py-12 md:py-20 max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6">
           Mobile Friendly Sports <span className="text-gradient-gold">Betting Platforms 2026</span>

@@ -5,6 +5,7 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
+import { BlogPostingSchema } from "@/components/BlogPostingSchema";
 import blogImg from "@/assets/card-livecricket.jpg";
 
 const BlogHowToBetCricket = () => {
@@ -18,6 +19,7 @@ const BlogHowToBetCricket = () => {
   return (
     <main>
       <Header />
+      <BlogPostingSchema title="How to Bet on Live Cricket Matches Online 2026" description="Complete guide to live cricket betting with best odds." slug="/blog/how-to-bet-on-live-cricket-matches-online" />
       <article className="container py-12 md:py-20 max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6">
           How to Bet on Live Cricket <span className="text-gradient-gold">Matches Online</span>

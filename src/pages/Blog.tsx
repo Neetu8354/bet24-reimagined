@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { useSeo } from "@/hooks/use-seo";
+import { BlogPostingSchema } from "@/components/BlogPostingSchema";
 import blogImg from "@/assets/card-fantasy.jpg";
 
 const Blog = () => {
@@ -15,6 +16,7 @@ const Blog = () => {
   return (
     <main>
       <Header />
+      <BlogPostingSchema title="How to Login Khelo24Login Step by Step Guide 2026" description="Complete step by step guide on how to login khelo24login with username." slug="/blog/how-to-login-khelo24login" />
       <article className="container py-12 md:py-20 max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6">
           How to Login Khelo24Login <span className="text-gradient-gold">Step by Step Guide 2026</span>
