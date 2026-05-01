@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { Link } from "react-router-dom";
 import { useSeo } from "@/hooks/use-seo";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { ArrowRight } from "lucide-react";
 
 const BLOGS = [
@@ -29,6 +30,7 @@ const BlogListing = () => {
   return (
     <main>
       <Header />
+      <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Blog" }]} />
       <section className="container py-12 md:py-20">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-4">
           Blog & <span className="text-gradient-gold">Guides</span>

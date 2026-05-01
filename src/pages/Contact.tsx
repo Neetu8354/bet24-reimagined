@@ -5,6 +5,7 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Headphones, MessagesSquare } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { RelatedLinks } from "@/components/RelatedLinks";
 
 const Contact = () => {
@@ -18,6 +19,7 @@ const Contact = () => {
   return (
     <main>
       <Header />
+      <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Contact Us" }]} />
       <section className="container py-12 md:py-20">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-4">
           Contact <span className="text-gradient-gold">Khelo24Login.live</span>

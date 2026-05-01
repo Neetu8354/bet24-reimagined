@@ -5,6 +5,7 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import { BlogPostingSchema } from "@/components/BlogPostingSchema";
 import blogImg from "@/assets/card-prediction.jpg";
@@ -20,6 +21,7 @@ const BlogCricketPrediction = () => {
   return (
     <main>
       <Header />
+      <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Cricket Prediction Sites" }]} />
       <BlogPostingSchema title="Best Cricket Prediction Sites Online 2026" description="ML-powered predictions, live odds and expert analysis." slug="/blog/best-cricket-prediction-sites-online" />
       <article className="container py-12 md:py-20 max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6">

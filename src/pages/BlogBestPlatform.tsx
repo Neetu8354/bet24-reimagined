@@ -5,6 +5,7 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import { BlogPostingSchema } from "@/components/BlogPostingSchema";
 import blogImg from "@/assets/card-fantasy.jpg";
@@ -20,6 +21,7 @@ const BlogBestPlatform = () => {
   return (
     <main>
       <Header />
+      <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Best Platform for Beginners" }]} />
       <BlogPostingSchema title="Best Online Sports Betting Platform for Beginners 2026" description="India's easiest platform with free ID, fast payouts and 24x7 support." slug="/blog/best-online-sports-betting-platform-for-beginners" />
       <article className="container py-12 md:py-20 max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6">

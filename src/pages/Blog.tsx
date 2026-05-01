@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { useSeo } from "@/hooks/use-seo";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import { BlogPostingSchema } from "@/components/BlogPostingSchema";
 import blogImg from "@/assets/card-fantasy.jpg";
@@ -17,6 +18,7 @@ const Blog = () => {
   return (
     <main>
       <Header />
+      <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "How to Login" }]} />
       <BlogPostingSchema title="How to Login Khelo24Login Step by Step Guide 2026" description="Complete step by step guide on how to login khelo24login with username." slug="/blog/how-to-login-khelo24login" />
       <article className="container py-12 md:py-20 max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6">

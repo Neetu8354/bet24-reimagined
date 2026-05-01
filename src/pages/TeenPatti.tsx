@@ -5,6 +5,7 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import cardTeen from "@/assets/card-teenpatti.jpg";
 
@@ -19,6 +20,7 @@ const TeenPatti = () => {
   return (
     <main>
       <Header />
+      <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Teen Patti" }]} />
       <section className="container py-12 md:py-20">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-4">
           Teen Patti on <span className="text-gradient-gold">Khelo24Login.live</span>
