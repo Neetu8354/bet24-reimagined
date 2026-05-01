@@ -65,6 +65,7 @@ const Cricket = () => {
             Learn <strong className="text-foreground">how to bet on live cricket matches online</strong> with our step-by-step guides and start winning today. As a <strong className="text-foreground">safe online sports betting website</strong>, we ensure every transaction is encrypted and withdrawals are processed in under 5 minutes. Get your <strong className="text-foreground">free cricket ID</strong> now and experience the best <strong className="text-foreground">sports betting platform online</strong>.
           </p>
         </div>
+      </section>
       <Footer />
       <FloatingWhatsApp />
     </main>

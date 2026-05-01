@@ -49,6 +49,7 @@ const TeenPatti = () => {
             As one of the <strong className="text-foreground">safe online sports betting websites 2026</strong>, we offer a <strong className="text-foreground">mobile friendly sports betting platform</strong> where you can enjoy Teen Patti 24/7 in Hindi, English, Telugu and Tamil. Get your <strong className="text-foreground">free cricket ID</strong> and access all games including Teen Patti, Andar Bahar, and more.
           </p>
         </div>
+      </section>
       <Footer />
       <FloatingWhatsApp />
     </main>
