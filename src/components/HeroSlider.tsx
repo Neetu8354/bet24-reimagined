@@ -49,11 +49,11 @@ export const HeroSlider = () => {
               ))}
             </h1>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-xl">{s.sub}</p>
-            <div className="flex flex-col gap-1.5 pt-1 max-w-[220px] mx-auto items-center">
-              <Button onClick={openWA} size="sm" className="w-full bg-gradient-gold text-gold-foreground hover:opacity-90 shadow-gold font-bold text-xs sm:text-sm rounded-xl">
-                Play Now <ArrowRight className="h-3.5 w-3.5 ml-1" />
+            <div className="flex flex-col gap-2 pt-1 max-w-[280px] mx-auto items-center">
+              <Button onClick={openWA} size="lg" className="w-full bg-gradient-gold text-gold-foreground hover:opacity-90 shadow-gold font-bold text-base sm:text-lg rounded-2xl h-12">
+                Play Now <ArrowRight className="h-5 w-5 ml-1" />
               </Button>
-              <Button onClick={openWA} size="sm" variant="outline" className="w-full bg-background border-2 border-gold text-gold hover:bg-gold/10 font-bold text-xs sm:text-sm rounded-xl">
+              <Button onClick={openWA} size="lg" variant="outline" className="w-full bg-background border-2 border-gold text-gold hover:bg-gold/10 font-bold text-base sm:text-lg rounded-2xl h-12">
                 Join &amp; Win Big
               </Button>
             </div>
