@@ -21,9 +21,32 @@ const Cricket = () => {
     keywords: "live cricket betting, cricket betting online, khelo24login cricket, best cricket odds",
   });
 
+  const sportsEventSchema = {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    name: "Live Cricket Betting on Khelo24Login.live",
+    description: "Bet on live cricket matches online including IPL, T20 World Cup, ODI and all major tournaments with the best odds.",
+    url: "https://khelo24login.live/cricket",
+    location: {
+      "@type": "VirtualLocation",
+      url: "https://khelo24login.live/cricket",
+    },
+    organizer: {
+      "@type": "Organization",
+      name: "Khelo24Login.live",
+      url: "https://khelo24login.live",
+    },
+    sport: "Cricket",
+    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+  };
+
   return (
     <main>
       <Header />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(sportsEventSchema) }}
+      />
       <section className="container py-12 md:py-20">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-4">
           Live Cricket Betting on <span className="text-gradient-gold">Khelo24Login.live</span>
