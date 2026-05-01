@@ -5,6 +5,7 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Rocket, Target, Gift } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { RelatedLinks } from "@/components/RelatedLinks";
 import aviatorImg from "@/assets/promo-arcade.jpg";
 import aviatorImg2 from "@/assets/card-roulette.jpg";
@@ -26,6 +27,7 @@ const Aviator = () => {
   return (
     <main>
       <Header />
+      <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Aviator" }]} />
       <section className="container py-12 md:py-20">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-4">
           Aviator on <span className="text-gradient-gold">Khelo24Login.live</span>
