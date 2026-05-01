@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { openWA } from "@/lib/wa";
-import { ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronRight as ArrowRight } from "lucide-react";
 import hero from "@/assets/hero-cricket.jpg";
 import promoFantasy from "@/assets/promo-fantasy.jpg";
 import promoLive from "@/assets/promo-live.jpg";
