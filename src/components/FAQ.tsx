@@ -1,11 +1,11 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const FAQS = [
-  { q: "How do I get my Khelo24Bet ID?", a: "Click any 'Get ID on WhatsApp' button. Our agent will share your ID and password within 60 seconds." },
+  { q: "How do I get my free Cricket ID?", a: "Click any 'Get ID on WhatsApp' button. Our agent will share your ID and password within 60 seconds." },
   { q: "What is the minimum deposit?", a: "₹100 via UPI, IMPS or Net Banking. All transactions are in Indian Rupees (INR)." },
   { q: "How fast are withdrawals?", a: "Withdrawals are processed in under 5 minutes directly to your bank account or UPI ID." },
   { q: "Which cricket events are covered?", a: "IPL, T20 World Cup, ODI World Cup, BBL, PSL, CPL, Test matches and all major domestic tournaments." },
-  { q: "Are the casino games fair?", a: "All live casino games stream from licensed studios with certified RNGs and real dealers." },
+  { q: "How to play Aviator?", a: "Place your bet, watch the multiplier rise, and cash out before the plane crashes. Simple and exciting!" },
   { q: "Is customer support available 24/7?", a: "Yes, our WhatsApp chat support runs 24x7 in Hindi, English, Telugu and Tamil." },
 ];
 
