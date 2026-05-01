@@ -49,12 +49,12 @@ export const HeroSlider = () => {
               ))}
             </h1>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-xl">{s.sub}</p>
-            <div className="flex flex-row flex-wrap gap-2 sm:gap-3 pt-2">
-              <Button onClick={openWA} size="lg" className="flex-1 sm:flex-none bg-gradient-gold text-gold-foreground hover:opacity-90 shadow-gold font-bold text-xs sm:text-base">
-                <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 mr-1 sm:mr-2" /> Get ID
+            <div className="flex flex-col gap-3 pt-2 max-w-md">
+              <Button onClick={openWA} size="lg" className="w-full bg-gradient-gold text-gold-foreground hover:opacity-90 shadow-gold font-bold text-sm sm:text-base">
+                <MessageCircle className="h-5 w-5 mr-2" /> Get ID on WhatsApp
               </Button>
-              <Button onClick={openWA} size="lg" variant="outline" className="flex-1 sm:flex-none border-primary/50 text-primary hover:bg-primary/10 font-bold text-xs sm:text-base">
-                ₹15,000 Bonus
+              <Button onClick={openWA} size="lg" variant="outline" className="w-full border-primary/50 text-primary hover:bg-primary/10 font-bold text-sm sm:text-base">
+                Claim ₹15,000 Bonus
               </Button>
             </div>
           </div>
