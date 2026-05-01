@@ -23,7 +23,7 @@ export const HeroSlider = () => {
   const s = SLIDES[i];
   return (
     <section className="relative w-full overflow-hidden">
-      <div className="relative h-[78vh] min-h-[520px] sm:h-[68vh] md:h-[72vh] md:min-h-[560px] w-full">
+      <div className="relative h-[78vh] min-h-[520px] sm:h-[68vh] md:h-[88vh] md:min-h-[640px] w-full">
         {SLIDES.map((sl, idx) => (
           <img
             key={idx}
@@ -43,7 +43,7 @@ export const HeroSlider = () => {
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 border border-secondary/40 text-secondary text-[10px] sm:text-xs font-bold tracking-widest">
               <span className="h-2 w-2 rounded-full bg-secondary animate-pulse" /> {s.eyebrow}
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.05] tracking-tight">
               {s.title.split(" ").map((w, k) => (
                 <span key={k} className={k % 3 === 1 ? "text-gradient-gold" : ""}>{w} </span>
               ))}
@@ -60,11 +60,11 @@ export const HeroSlider = () => {
           </div>
         </div>
 
-        <button onClick={() => setI((p) => (p - 1 + SLIDES.length) % SLIDES.length)} className="hidden sm:flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 h-10 w-10 rounded-full bg-background/60 backdrop-blur border border-border items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Previous">
-          <ChevronLeft className="h-5 w-5" />
+        <button onClick={() => setI((p) => (p - 1 + SLIDES.length) % SLIDES.length)} className="hidden md:flex absolute left-4 lg:left-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 rounded-full bg-background/60 backdrop-blur border border-border items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Previous">
+          <ChevronLeft className="h-6 w-6" />
         </button>
-        <button onClick={() => setI((p) => (p + 1) % SLIDES.length)} className="hidden sm:flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 h-10 w-10 rounded-full bg-background/60 backdrop-blur border border-border items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Next">
-          <ChevronRight className="h-5 w-5" />
+        <button onClick={() => setI((p) => (p + 1) % SLIDES.length)} className="hidden md:flex absolute right-4 lg:right-6 top-1/2 -translate-y-1/2 z-20 h-12 w-12 rounded-full bg-background/60 backdrop-blur border border-border items-center justify-center hover:bg-primary hover:text-primary-foreground transition-smooth" aria-label="Next">
+          <ChevronRight className="h-6 w-6" />
         </button>
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
           {SLIDES.map((_, idx) => (
