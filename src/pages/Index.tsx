@@ -14,14 +14,14 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Khelo24Bet — Online Cricket ID & Live Casino in India | WhatsApp 24x7";
+    document.title = "Play Online Games on Khelo24Login.live | Fast Withdrawal | 24x7 Support";
     const setMeta = (name: string, content: string) => {
       let el = document.querySelector(`meta[name="${name}"]`);
       if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
       el.setAttribute("content", content);
     };
-    setMeta("description", "Get your Khelo24Bet cricket ID on WhatsApp in 60 seconds. IPL fantasy, live cricket scores, Andar Bahar, Teen Patti, Roulette. INR deposits, instant payouts, 24x7 support.");
-    setMeta("keywords", "khelo24bet, cricket id, ipl fantasy india, andar bahar, teen patti, online casino india, whatsapp cricket id, reddy anna");
+    setMeta("description", "Khelo24Login.live - Best online sports gaming platform in India. Get free cricket ID instantly, play live cricket betting, Aviator, Teen Patti with fast withdrawals and 24x7 support.");
+    setMeta("keywords", "khelo24login, khelo24login.live, online sports gaming platform, free cricket id, live cricket betting, aviator game, teen patti online, fast withdrawal betting, safe online sports betting");
     let canon = document.querySelector('link[rel="canonical"]');
     if (!canon) { canon = document.createElement("link"); canon.setAttribute("rel", "canonical"); document.head.appendChild(canon); }
     canon.setAttribute("href", window.location.origin + "/");
@@ -30,7 +30,7 @@ const Index = () => {
   return (
     <main>
       <Header />
-      <h1 className="sr-only">Khelo24Bet — Online Cricket ID & Live Casino in India</h1>
+      <h1 className="sr-only">Play Online Games on Khelo24Login.live</h1>
       <HeroSlider />
       <StatsBar />
       <WinnersTicker />
