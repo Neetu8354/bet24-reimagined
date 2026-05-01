@@ -5,6 +5,7 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Smartphone, Zap, Headphones, MessageCircle } from "lucide-react";
 import { useEffect } from "react";
+import aboutImg from "@/assets/promo-live.jpg";
 
 const FEATURES = [
   { icon: ShieldCheck, title: "Safe Online Sports Betting Websites 2026", desc: "Fully encrypted platform with secure transactions and verified gameplay." },
@@ -62,10 +63,13 @@ const About = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <Button onClick={openWA} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold">
-            <MessageCircle className="h-5 w-5 mr-2" /> Join Now on WhatsApp
-          </Button>
+        <div className="mt-12">
+          <img src={aboutImg} alt="best betting platform in india. Join now and play fast khelo24login.live" className="rounded-xl border border-border w-full max-w-3xl mx-auto aspect-video object-cover mb-8" loading="lazy" />
+          <div className="text-center">
+            <Button onClick={openWA} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold">
+              <MessageCircle className="h-5 w-5 mr-2" /> Join Now on WhatsApp
+            </Button>
+          </div>
         </div>
       </section>
       <Footer />

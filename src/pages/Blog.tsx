@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { useEffect } from "react";
+import blogImg from "@/assets/card-fantasy.jpg";
 
 const Blog = () => {
   useEffect(() => {
@@ -48,6 +49,8 @@ const Blog = () => {
             </div>
           </div>
         </section>
+
+        <img src={blogImg} alt="gaming tips blog for khelo24login.live" className="rounded-xl border border-border w-full aspect-video object-cover mt-8" loading="lazy" />
       </article>
       <Footer />
       <FloatingWhatsApp />

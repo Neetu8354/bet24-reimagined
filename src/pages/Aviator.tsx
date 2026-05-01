@@ -5,6 +5,8 @@ import { openWA } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Rocket, Target, Gift } from "lucide-react";
 import { useEffect } from "react";
+import aviatorImg from "@/assets/promo-arcade.jpg";
+import aviatorImg2 from "@/assets/card-roulette.jpg";
 
 const STEPS = [
   { icon: Rocket, title: "Place Your Bet", desc: "Choose your bet amount before the plane takes off." },
@@ -31,6 +33,11 @@ const Aviator = () => {
           Aviator on <span className="text-gradient-gold">Khelo24Login.live</span>
         </h1>
         <p className="text-muted-foreground max-w-2xl mb-10">The most exciting crash game — place your bet, watch the multiplier rise, and cash out before it crashes!</p>
+
+        <div className="grid md:grid-cols-2 gap-4 mb-8">
+          <img src={aviatorImg} alt="how to win aviator 10x with khelo24login.live" className="rounded-xl border border-border w-full aspect-video object-cover" loading="lazy" />
+          <img src={aviatorImg2} alt="play now and get rewards with khelo24login.live" className="rounded-xl border border-border w-full aspect-video object-cover" loading="lazy" />
+        </div>
 
         <h2 className="text-xl md:text-2xl font-bold mb-6">How to Play Aviator</h2>
         <div className="grid sm:grid-cols-3 gap-4 mb-14">

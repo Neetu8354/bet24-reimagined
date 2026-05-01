@@ -2,6 +2,8 @@ import { Header } from "@/components/Header";
 import { HeroSlider } from "@/components/HeroSlider";
 import { StatsBar } from "@/components/StatsBar";
 import { WinnersTicker } from "@/components/WinnersTicker";
+import { TrustSection } from "@/components/TrustSection";
+import { PopularGames } from "@/components/PopularGames";
 import { GameSections } from "@/components/GameSections";
 import { LiveScores } from "@/components/LiveScores";
 import { Promotions } from "@/components/Promotions";
@@ -34,6 +36,8 @@ const Index = () => {
       <HeroSlider />
       <StatsBar />
       <WinnersTicker />
+      <TrustSection />
+      <PopularGames />
       <GameSections />
       <LiveScores />
       <Promotions />
