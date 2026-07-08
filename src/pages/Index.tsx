@@ -25,7 +25,6 @@ const Index = () => {
   return (
     <main>
       <Header />
-      <h1 className="sr-only">Play Online Games on Khelo24App.live</h1>
       <HeroSlider />
       <StatsBar />
       <WinnersTicker />

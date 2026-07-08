@@ -6,9 +6,9 @@ import cardAndar from "@/assets/card-andarbahar.jpg";
 import { Play } from "lucide-react";
 
 const GAMES = [
-  { img: cardLive, title: "Live Cricket Betting", to: "/cricket", alt: "play online games on khelo24app.live" },
-  { img: cardAndar, title: "Aviator", to: "/aviator", alt: "free cricket ID on khelo24app.live" },
-  { img: cardTeen, title: "Teen Patti", to: "/teen-patti", alt: "get your ID and play now at khelo24app.live" },
+  { img: cardLive, title: "Live Cricket Betting", to: "/cricket", alt: "Live cricket betting with real-time odds on Khelo24App" },
+  { img: cardAndar, title: "Aviator", to: "/aviator", alt: "Aviator crash game on Khelo24App" },
+  { img: cardTeen, title: "Teen Patti", to: "/teen-patti", alt: "Teen Patti online card game on Khelo24App" },
 ];
 
 export const PopularGames = () => (

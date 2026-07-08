@@ -1,5 +1,6 @@
 import { openWA } from "@/lib/wa";
 import { Play, Flame } from "lucide-react";
+import { Link } from "react-router-dom";
 import cardFantasy from "@/assets/card-fantasy.jpg";
 import cardAndar from "@/assets/card-andarbahar.jpg";
 import cardTeen from "@/assets/card-teenpatti.jpg";
@@ -8,48 +9,64 @@ import cardLive from "@/assets/card-livecricket.jpg";
 import cardPred from "@/assets/card-prediction.jpg";
 import cardLeader from "@/assets/card-leaderboard.jpg";
 
-type Game = { img: string; title: string; tag: string; hot?: boolean; alt?: string };
+type Game = { img: string; title: string; tag: string; hot?: boolean; alt?: string; to?: string };
 
 const CRICKET: Game[] = [
-  { img: cardLive, title: "Live IPL Match", tag: "LIVE NOW", hot: true, alt: "live cricket betting on khelo24app.live" },
-  { img: cardFantasy, title: "Fantasy XI", tag: "Win ₹10L", alt: "fantasy cricket on khelo24app.live" },
-  { img: cardPred, title: "Match Predictions", tag: "Daily Quiz", alt: "cricket predictions on khelo24app.live" },
-  { img: cardLeader, title: "Leaderboards", tag: "Top 100", hot: true, alt: "leaderboards on khelo24app.live" },
+  { img: cardLive, title: "Live IPL Match", tag: "LIVE NOW", hot: true, alt: "Live IPL cricket match betting odds on Khelo24App" },
+  { img: cardFantasy, title: "Fantasy XI", tag: "Win ₹10L", alt: "Fantasy cricket XI team selection game on Khelo24App" },
+  { img: cardPred, title: "Match Predictions", tag: "Daily Quiz", alt: "Cricket match predictions and daily quiz on Khelo24App" },
+  { img: cardLeader, title: "Leaderboards", tag: "Top 100", hot: true, alt: "Leaderboards showing top 100 players on Khelo24App" },
 ];
 
 const CASINO: Game[] = [
-  { img: cardAndar, title: "Andar Bahar", tag: "₹10 - ₹5L", hot: true, alt: "play andar bahar on khelo24app.live" },
-  { img: cardTeen, title: "Teen Patti", tag: "Live Dealer", hot: true, alt: "play teen patti on khelo24app.live" },
-  { img: cardRoulette, title: "Lightning Roulette", tag: "500x", alt: "play roulette on khelo24app.live" },
-  { img: cardAndar, title: "Dragon Tiger", tag: "Fast Paced", alt: "play dragon tiger on khelo24app.live" },
-  { img: cardTeen, title: "32 Cards", tag: "Indian Live", alt: "play 32 cards on khelo24app.live" },
-  { img: cardRoulette, title: "Auto Roulette", tag: "24/7", alt: "play auto roulette on khelo24app.live" },
+  { img: cardAndar, title: "Andar Bahar", tag: "₹10 - ₹5L", hot: true, alt: "Andar Bahar live casino game on Khelo24App" },
+  { img: cardTeen, title: "Teen Patti", tag: "Live Dealer", hot: true, alt: "Teen Patti live dealer card game on Khelo24App" },
+  { img: cardRoulette, title: "Lightning Roulette", tag: "500x", alt: "Lightning Roulette live casino game on Khelo24App" },
+  { img: cardAndar, title: "Dragon Tiger", tag: "Fast Paced", alt: "Dragon Tiger fast-paced card game on Khelo24App" },
+  { img: cardTeen, title: "32 Cards", tag: "Indian Live", alt: "32 Cards Indian live casino game on Khelo24App" },
+  { img: cardRoulette, title: "Auto Roulette", tag: "24/7", alt: "Auto Roulette 24/7 live casino game on Khelo24App" },
 ];
 
-const Card = ({ g }: { g: Game }) => (
-  <button onClick={openWA} className="group relative overflow-hidden rounded-xl bg-gradient-card border border-border hover:border-primary/60 transition-smooth shadow-card hover:shadow-glow text-left">
-    <div className="aspect-[4/3] overflow-hidden">
-      <img src={g.img} alt={g.alt || g.title} loading="lazy" width={800} height={600} className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" />
-    </div>
-    <div className="absolute top-2 left-2 flex gap-1.5">
-      {g.hot && (
-        <span className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-destructive text-destructive-foreground text-[10px] font-bold">
-          <Flame className="h-3 w-3" /> HOT
-        </span>
-      )}
-      <span className="px-2 py-0.5 rounded-full bg-background/80 backdrop-blur text-[10px] font-bold text-foreground border border-border">
-        {g.tag}
-      </span>
-    </div>
-    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-90" />
-    <div className="absolute bottom-0 left-0 right-0 p-3 flex items-center justify-between">
-      <h3 className="font-bold text-sm md:text-base">{g.title}</h3>
-      <div className="h-8 w-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center group-hover:scale-110 transition-transform">
-        <Play className="h-4 w-4 fill-current" />
+const Card = ({ g }: { g: Game }) => {
+  const cardContent = (
+    <>
+      <div className="aspect-[4/3] overflow-hidden">
+        <img src={g.img} alt={g.alt || g.title} loading="lazy" width={800} height={600} className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500" />
       </div>
-    </div>
-  </button>
-);
+      <div className="absolute top-2 left-2 flex gap-1.5">
+        {g.hot && (
+          <span className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-destructive text-destructive-foreground text-[10px] font-bold">
+            <Flame className="h-3 w-3" /> HOT
+          </span>
+        )}
+        <span className="px-2 py-0.5 rounded-full bg-background/80 backdrop-blur text-[10px] font-bold text-foreground border border-border">
+          {g.tag}
+        </span>
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-90" />
+      <div className="absolute bottom-0 left-0 right-0 p-3 flex items-center justify-between">
+        <h3 className="font-bold text-sm md:text-base">{g.title}</h3>
+        <div className="h-8 w-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center group-hover:scale-110 transition-transform">
+          <Play className="h-4 w-4 fill-current" />
+        </div>
+      </div>
+    </>
+  );
+
+  if (g.to) {
+    return (
+      <Link to={g.to} className="group relative overflow-hidden rounded-xl bg-gradient-card border border-border hover:border-primary/60 transition-smooth shadow-card hover:shadow-glow text-left">
+        {cardContent}
+      </Link>
+    );
+  }
+
+  return (
+    <button onClick={openWA} className="group relative overflow-hidden rounded-xl bg-gradient-card border border-border hover:border-primary/60 transition-smooth shadow-card hover:shadow-glow text-left w-full">
+      {cardContent}
+    </button>
+  );
+};
 
 const Section = ({ title, sub, games }: { title: string; sub: string; games: Game[] }) => (
   <section className="container py-10 md:py-14">

@@ -1,4 +1,4 @@
-import { openWA } from "@/lib/wa";
+import { WA_LINK } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Clock, ShieldCheck, Headphones } from "lucide-react";
 
@@ -25,17 +25,21 @@ export const WhatsAppCTA = () => (
             Get your ID, deposit, withdraw, place predictions, check live scores — all in one chat. No app needed. Powered by Khelo24App.live official desk.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Button onClick={openWA} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold animate-pulse-glow">
-              <MessageCircle className="h-5 w-5 mr-2" /> Start Chat Now
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold animate-pulse-glow">
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-5 w-5 mr-2" /> Start Chat Now
+              </a>
             </Button>
-            <Button onClick={openWA} size="lg" variant="outline" className="border-border font-bold">
-              Talk to Live Agent
+            <Button asChild size="lg" variant="outline" className="border-border font-bold">
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+                Talk to Live Agent
+              </a>
             </Button>
           </div>
         </div>
         <div className="grid gap-3">
           {FEATS.map((f) => (
-            <button key={f.t} onClick={openWA} className="flex items-start gap-4 p-4 rounded-xl bg-background/50 border border-border hover:border-accent/50 transition-smooth text-left">
+            <a key={f.t} href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-4 rounded-xl bg-background/50 border border-border hover:border-accent/50 transition-smooth text-left">
               <div className="h-11 w-11 rounded-lg bg-accent/15 border border-accent/30 flex items-center justify-center shrink-0">
                 <f.icon className="h-5 w-5 text-accent" />
               </div>
@@ -43,7 +47,7 @@ export const WhatsAppCTA = () => (
                 <h3 className="font-bold mb-0.5">{f.t}</h3>
                 <p className="text-xs text-muted-foreground">{f.d}</p>
               </div>
-            </button>
+            </a>
           ))}
         </div>
       </div>

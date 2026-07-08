@@ -1,4 +1,4 @@
-import { openWA } from "@/lib/wa";
+import { WA_LINK } from "@/lib/wa";
 import { MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -47,9 +47,9 @@ export const Footer = () => (
           </span>
         </Link>
         <p className="text-sm text-muted-foreground mb-4">India's most trusted online sports gaming platform. WhatsApp-first, INR-only, instant payouts.</p>
-        <button onClick={openWA} className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-accent text-accent-foreground font-bold text-sm hover:opacity-90">
+        <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-accent text-accent-foreground font-bold text-sm hover:opacity-90">
           <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
-        </button>
+        </a>
       </div>
       {COLS.map((c) => (
         <div key={c.title}>
@@ -60,7 +60,7 @@ export const Footer = () => (
                 {l.to ? (
                   <Link to={l.to} className="text-sm text-muted-foreground hover:text-primary transition-smooth">{l.label}</Link>
                 ) : (
-                  <button onClick={openWA} className="text-sm text-muted-foreground hover:text-primary transition-smooth">{l.label}</button>
+                  <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-smooth">{l.label}</a>
                 )}
               </li>
             ))}
