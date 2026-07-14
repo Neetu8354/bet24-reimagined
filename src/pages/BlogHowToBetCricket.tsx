@@ -36,7 +36,7 @@ const BlogHowToBetCricket = () => {
             Want to learn <strong className="text-foreground">how to bet on live cricket matches online</strong>? Live cricket betting lets you place bets while the match is happening — making it more exciting and potentially more profitable than pre-match betting. Khelo24App.live is the best <strong className="text-foreground">online sports gaming platform</strong> for live cricket betting in India.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            On our <strong className="text-foreground">sports betting platform online</strong>, you can bet on match winner, top batsman, total runs, wickets and many more markets — all updating in real-time as the game progresses.
+            On our platform, you can bet on match winner, top batsman, total runs, wickets and many more markets — all updating in real-time as the game progresses.
           </p>
         </section>
 
@@ -68,7 +68,7 @@ const BlogHowToBetCricket = () => {
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold text-sm">4</span>
               <div>
                 <h3 className="font-bold mb-1">Win & Withdraw Instantly</h3>
-                <p className="text-sm text-muted-foreground">If you win, withdraw profits in under 5 minutes via UPI on our <strong>mobile friendly sports betting platforms</strong>.</p>
+                <p className="text-sm text-muted-foreground">If you win, withdraw profits in under 5 minutes via UPI on our platform.</p>
               </div>
             </div>
           </div>
