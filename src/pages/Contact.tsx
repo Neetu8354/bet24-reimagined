@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Headphones, MessagesSquare } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
@@ -28,7 +28,7 @@ const Contact = () => {
 
         <h2 className="text-xl md:text-2xl font-bold mb-6">24x7 Support Available</h2>
         <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mb-10">
-          <button onClick={openWA} className="flex items-start gap-4 p-6 rounded-xl bg-card/50 border border-border hover:border-accent/50 transition-all text-left">
+          <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-6 rounded-xl bg-card/50 border border-border hover:border-accent/50 transition-all text-left">
             <div className="h-12 w-12 rounded-lg bg-accent/15 border border-accent/30 flex items-center justify-center shrink-0">
               <MessagesSquare className="h-6 w-6 text-accent" />
             </div>
@@ -36,8 +36,8 @@ const Contact = () => {
               <h3 className="font-bold mb-1">Live Chat</h3>
               <p className="text-sm text-muted-foreground">Instant replies from our support team, available round the clock.</p>
             </div>
-          </button>
-          <button onClick={openWA} className="flex items-start gap-4 p-6 rounded-xl bg-card/50 border border-border hover:border-accent/50 transition-all text-left">
+          </a>
+          <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-6 rounded-xl bg-card/50 border border-border hover:border-accent/50 transition-all text-left">
             <div className="h-12 w-12 rounded-lg bg-accent/15 border border-accent/30 flex items-center justify-center shrink-0">
               <Headphones className="h-6 w-6 text-accent" />
             </div>
@@ -45,18 +45,20 @@ const Contact = () => {
               <h3 className="font-bold mb-1">WhatsApp Assistance</h3>
               <p className="text-sm text-muted-foreground">Chat with us on WhatsApp in Hindi, English, Telugu & Tamil.</p>
             </div>
-          </button>
+          </a>
         </div>
 
         <div className="max-w-2xl mb-10">
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Need help with your <strong className="text-foreground">khelo24app online platform</strong> account? Whether it's about <strong className="text-foreground">live cricket betting</strong>, <strong className="text-foreground">Aviator crash game</strong>, <strong className="text-foreground">Teen Patti online</strong>, deposits, or <strong className="text-foreground">fast withdrawal betting</strong> — our team is available 24x7 on WhatsApp. We're proud to be among the <strong className="text-foreground">safe online sports betting websites 2026</strong> with dedicated multilingual support.
+            Need help with your account? Whether it's about live cricket betting, Aviator crash game, Teen Patti online, deposits, or withdrawals — our team is available 24x7 on WhatsApp. We provide dedicated multilingual support in Hindi, English, Telugu & Tamil.
           </p>
         </div>
 
         <div className="text-center">
-          <Button onClick={openWA} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold">
-            <MessageCircle className="h-5 w-5 mr-2" /> Chat on WhatsApp Now
+          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold">
+            <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="h-5 w-5 mr-2" /> Chat on WhatsApp Now
+            </a>
           </Button>
         </div>
       </section>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { ChevronLeft, ChevronRight, ChevronRight as ArrowRight } from "lucide-react";
 import hero from "@/assets/hero-cricket.jpg";
 import promoFantasy from "@/assets/promo-fantasy.jpg";
@@ -50,11 +50,15 @@ export const HeroSlider = () => {
             </h1>
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-xl">{s.sub}</p>
             <div className="flex flex-col gap-4 pt-2 max-w-[280px] mx-auto items-center">
-              <Button onClick={openWA} size="lg" className="w-full bg-gradient-gold text-gold-foreground hover:opacity-90 shadow-gold font-black text-base sm:text-lg rounded-2xl h-12">
-                Play Now <ArrowRight className="h-5 w-5 ml-1" />
+              <Button asChild size="lg" className="w-full bg-gradient-gold text-gold-foreground hover:opacity-90 shadow-gold font-black text-base sm:text-lg rounded-2xl h-12">
+                <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+                  Play Now <ArrowRight className="h-5 w-5 ml-1" />
+                </a>
               </Button>
-              <Button onClick={openWA} size="lg" variant="outline" className="w-full bg-background border-2 border-gold text-gold hover:bg-gold/10 font-black text-base sm:text-lg rounded-2xl h-12">
-                Join &amp; Win Big
+              <Button asChild size="lg" variant="outline" className="w-full bg-background border-2 border-gold text-gold hover:bg-gold/10 font-black text-base sm:text-lg rounded-2xl h-12">
+                <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+                  Join &amp; Win Big
+                </a>
               </Button>
             </div>
           </div>

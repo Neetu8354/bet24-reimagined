@@ -1,4 +1,4 @@
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { Smartphone, IndianRupee, Building2, CreditCard, Wallet } from "lucide-react";
 
 const METHODS = [

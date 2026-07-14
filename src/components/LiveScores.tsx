@@ -1,4 +1,4 @@
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { Radio } from "lucide-react";
 

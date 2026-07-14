@@ -5,7 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { ArrowRight, Home, BookOpen, MessageCircle } from "lucide-react";
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 
 const QUICK_LINKS = [
@@ -61,8 +61,10 @@ const NotFound = () => {
           ))}
         </div>
 
-        <Button onClick={openWA} size="lg" className="bg-gradient-gold text-gold-foreground font-bold">
-          <MessageCircle className="h-5 w-5 mr-2" /> Chat with Support
+        <Button asChild size="lg" className="bg-gradient-gold text-gold-foreground font-bold">
+          <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+            <MessageCircle className="h-5 w-5 mr-2" /> Chat with Support
+          </a>
         </Button>
       </section>
       <Footer />

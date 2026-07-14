@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
@@ -78,7 +78,7 @@ const BlogHowToUse = () => {
         </section>
 
         <div className="text-center mt-8">
-          <Button onClick={openWA} size="lg" className="bg-gradient-gold text-gold-foreground font-bold">
+          <Button asChild size="lg" className="bg-gradient-gold text-gold-foreground font-bold">
             <MessageCircle className="h-5 w-5 mr-2" /> Start Playing Now
           </Button>
         </div>

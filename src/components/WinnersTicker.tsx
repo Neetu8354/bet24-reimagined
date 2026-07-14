@@ -1,4 +1,4 @@
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { Trophy } from "lucide-react";
 
 const TICKER = [
