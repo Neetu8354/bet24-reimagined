@@ -5,7 +5,7 @@ import { MessageCircle, Zap, CreditCard, Smartphone, Headphones } from "lucide-r
 const REASONS = [
   { icon: MessageCircle, title: "Instant Free Cricket ID", desc: "Get your cricket ID on WhatsApp in under 60 seconds — completely free." },
   { icon: Zap, title: "Fast Withdrawals", desc: "Withdrawals processed in under 5 minutes directly to your bank or UPI." },
-  { icon: Smartphone, title: "Mobile Friendly Sports Betting Platforms", desc: "Play anywhere on any device — fully optimized for mobile gaming." },
+  { icon: Smartphone, title: "Mobile Friendly Gaming", desc: "Play anywhere on any device — fully optimized for mobile gaming." },
   { icon: Headphones, title: "24x7 Support", desc: "Always available via WhatsApp in Hindi, English, Telugu & Tamil." },
 ];
 
@@ -16,7 +16,7 @@ export const TrustSection = () => (
         India's Trusted <span className="text-gradient-gold">Online Sports Gaming</span> Platform
       </h2>
       <p className="text-sm md:text-base text-muted-foreground mt-3 max-w-2xl mx-auto">
-        Enjoy fast and secure betting on Khelo24App.live — one of the best places for online sports gaming. Whether you're looking for a <strong className="text-foreground">khelo24app online platform</strong> to play cricket, Aviator or Teen Patti, we've got you covered with India's most trusted <strong className="text-foreground">sports betting platform online</strong>.
+        Enjoy fast and secure betting on Khelo24App.live — one of the best places for online gaming. Whether you're looking to play cricket, Aviator or Teen Patti, we've got you covered with India's most trusted platform.
       </p>
     </div>
 
