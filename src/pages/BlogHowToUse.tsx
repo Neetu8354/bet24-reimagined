@@ -36,14 +36,14 @@ const BlogHowToUse = () => {
             If you're wondering <strong className="text-foreground">how to use khelo24app online</strong>, you've come to the right place. Khelo24App.live is a modern <strong className="text-foreground">online sports gaming platform</strong> designed specifically for Indian players who want a fast, clean and reliable betting experience.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Whether you're into live cricket betting, Aviator crash games, or Teen Patti — our <strong className="text-foreground">khelo24app online platform</strong> has everything you need. The platform works seamlessly on mobile and desktop, making it one of the most <strong className="text-foreground">mobile friendly sports betting platforms</strong> available today.
+            Whether you're into live cricket betting, Aviator crash games, or Teen Patti — our platform has everything you need. It works seamlessly on mobile and desktop for the best gaming experience.
           </p>
         </section>
 
         <section className="mb-10">
           <h2 className="text-xl md:text-2xl font-bold mb-3">How to Access Khelo24App Online</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            Using the <strong className="text-foreground">sports betting platform online</strong> is incredibly simple. Just follow these steps:
+            Using our platform is incredibly simple. Just follow these steps:
           </p>
           <div className="space-y-4">
             <div className="flex gap-4 p-4 rounded-xl bg-card/50 border border-border">
@@ -64,7 +64,7 @@ const BlogHowToUse = () => {
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground font-bold text-sm">3</span>
               <div>
                 <h3 className="font-bold mb-1">Deposit via UPI and Start Playing</h3>
-                <p className="text-sm text-muted-foreground">Minimum deposit is just ₹100 via UPI, IMPS or Net Banking. Start betting instantly on the <strong>online betting website</strong>.</p>
+                <p className="text-sm text-muted-foreground">Minimum deposit is just ₹100 via UPI, IMPS or Net Banking. Start betting instantly on our platform.</p>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ const BlogHowToUse = () => {
         <section className="mb-10">
           <h2 className="text-xl md:text-2xl font-bold mb-3">Why Choose This Online Sports Gaming Platform</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Khelo24App.live stands out as one of the best <strong className="text-foreground">sports gaming app online</strong> platforms because of instant withdrawals, 24x7 WhatsApp support, and a huge variety of games. Whether you're a beginner or experienced player, our <strong className="text-foreground">live sports betting site</strong> is built for everyone.
+            Khelo24App.live stands out because of instant withdrawals, 24x7 WhatsApp support, and a huge variety of games. Whether you're a beginner or experienced player, our platform is built for everyone.
           </p>
         </section>
 

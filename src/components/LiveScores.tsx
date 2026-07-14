@@ -52,14 +52,14 @@ export const LiveScores = () => (
             </div>
           </div>
           <div className="grid grid-cols-2 gap-2">
-            <button onClick={openWA} className="rounded-lg border border-primary/40 bg-primary/10 hover:bg-primary/20 transition-smooth p-2.5 text-left">
+            <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-primary/40 bg-primary/10 hover:bg-primary/20 transition-smooth p-2.5 text-left block">
               <div className="text-[10px] text-muted-foreground">{m.t1} wins</div>
               <div className="font-black text-primary">{m.odds.t1}</div>
-            </button>
-            <button onClick={openWA} className="rounded-lg border border-secondary/40 bg-secondary/10 hover:bg-secondary/20 transition-smooth p-2.5 text-left">
+            </a>
+            <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-secondary/40 bg-secondary/10 hover:bg-secondary/20 transition-smooth p-2.5 text-left block">
               <div className="text-[10px] text-muted-foreground">{m.t2} wins</div>
               <div className="font-black text-secondary">{m.odds.t2}</div>
-            </button>
+            </a>
           </div>
           <Button asChild className="w-full mt-3 bg-gradient-gold text-gold-foreground hover:opacity-90 font-bold" size="sm">
             <a href={WA_LINK} target="_blank" rel="noopener noreferrer">

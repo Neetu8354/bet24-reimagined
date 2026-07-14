@@ -33,10 +33,10 @@ const BlogMobileFriendly = () => {
         <section className="mb-10">
           <h2 className="text-xl md:text-2xl font-bold mb-3">Why Mobile Betting Is the Future</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            In 2026, over 90% of Indian bettors play on their phones. That's why choosing <strong className="text-foreground">mobile friendly sports betting platforms</strong> is essential. Khelo24App.live is built mobile-first — every feature works perfectly on any smartphone without downloading any app.
+            In 2026, over 90% of Indian bettors play on their phones. That's why choosing a mobile-friendly platform is essential. Khelo24App.live is built mobile-first — every feature works perfectly on any smartphone without downloading any app.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Our <strong className="text-foreground">online sports gaming platform</strong> loads in under 2 seconds on mobile, uses minimal data, and the WhatsApp-based system means you don't even need to open a browser for basic operations. It's the smartest <strong className="text-foreground">sports gaming app online</strong> experience without an actual app.
+            Our platform loads in under 2 seconds on mobile, uses minimal data, and the WhatsApp-based system means you don't even need to open a browser for basic operations. It's the smartest mobile gaming experience without an actual app.
           </p>
         </section>
 
@@ -49,15 +49,15 @@ const BlogMobileFriendly = () => {
             </div>
             <div className="p-4 rounded-xl bg-card/50 border border-border">
               <h3 className="font-bold mb-1">WhatsApp-Based Everything</h3>
-              <p className="text-sm text-muted-foreground">Register, deposit, withdraw and get support — all through WhatsApp on this <strong>online betting website</strong>.</p>
+              <p className="text-sm text-muted-foreground">Register, deposit, withdraw and get support — all through WhatsApp on our platform.</p>
             </div>
             <div className="p-4 rounded-xl bg-card/50 border border-border">
               <h3 className="font-bold mb-1">Fast Loading on 4G/5G</h3>
-              <p className="text-sm text-muted-foreground">Optimized for Indian network speeds. Our <strong>live sports betting site</strong> works smoothly even on slower connections.</p>
+              <p className="text-sm text-muted-foreground">Optimized for Indian network speeds. Our platform works smoothly even on slower connections.</p>
             </div>
             <div className="p-4 rounded-xl bg-card/50 border border-border">
               <h3 className="font-bold mb-1">Touch-Optimized Interface</h3>
-              <p className="text-sm text-muted-foreground">Big buttons, easy navigation and swipe-friendly design on the <strong>sports betting platform online</strong>.</p>
+              <p className="text-sm text-muted-foreground">Big buttons, easy navigation and swipe-friendly design on our platform.</p>
             </div>
           </div>
         </section>
@@ -65,7 +65,7 @@ const BlogMobileFriendly = () => {
         <section className="mb-10">
           <h2 className="text-xl md:text-2xl font-bold mb-3">Bet Anywhere, Anytime</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Whether you're commuting, at a cricket match, or relaxing at home — <strong className="text-foreground">bet on live cricket matches online</strong> from your phone. Khelo24App.live is among the <strong className="text-foreground">safe online sports betting websites 2026</strong> that truly puts mobile users first.
+            Whether you're commuting, at a cricket match, or relaxing at home — bet on live cricket matches from your phone. Khelo24App.live is among the safe platforms that truly puts mobile users first.
           </p>
         </section>
 
