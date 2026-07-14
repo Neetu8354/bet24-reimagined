@@ -25,8 +25,10 @@ export const Promotions = () => (
           <div className="text-3xl font-black text-gradient-gold mb-1">{p.value}</div>
           <h3 className="font-bold mb-1">{p.title}</h3>
           <p className="text-xs text-muted-foreground mb-4">{p.desc}</p>
-          <Button onClick={openWA} variant="outline" size="sm" className="w-full border-primary/40 hover:bg-primary hover:text-primary-foreground">
-            Claim Now
+          <Button asChild variant="outline" size="sm" className="w-full border-primary/40 hover:bg-primary hover:text-primary-foreground">
+            <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+              Claim Now
+            </a>
           </Button>
         </div>
       ))}

@@ -37,7 +37,7 @@ export const TrustSection = () => (
 
     <div className="mt-8 text-center">
       <p className="text-sm text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-        Khelo24App.live is among the <strong className="text-foreground">safe online sports betting websites 2026</strong> that Indian players trust. As a leading <strong className="text-foreground">mobile friendly sports betting platform</strong>, we offer seamless gameplay on every device with <strong className="text-foreground">fast withdrawal betting</strong> processed in under 5 minutes. Join thousands of players who already use our <strong className="text-foreground">online sports gaming platform</strong> daily.
+        Khelo24App.live is trusted by Indian players for secure gaming and fast payouts. Our platform works seamlessly on every device with withdrawals processed in under 5 minutes. Join thousands of players who enjoy our reliable service daily.
       </p>
     </div>
   </section>

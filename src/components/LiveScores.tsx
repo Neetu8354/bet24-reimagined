@@ -61,8 +61,10 @@ export const LiveScores = () => (
               <div className="font-black text-secondary">{m.odds.t2}</div>
             </button>
           </div>
-          <Button onClick={openWA} className="w-full mt-3 bg-gradient-gold text-gold-foreground hover:opacity-90 font-bold" size="sm">
-            Predict & Win on WhatsApp
+          <Button asChild className="w-full mt-3 bg-gradient-gold text-gold-foreground hover:opacity-90 font-bold" size="sm">
+            <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+              Predict & Win on WhatsApp
+            </a>
           </Button>
         </div>
       ))}
