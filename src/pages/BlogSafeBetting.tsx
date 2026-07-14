@@ -33,10 +33,10 @@ const BlogSafeBetting = () => {
         <section className="mb-10">
           <h2 className="text-xl md:text-2xl font-bold mb-3">How to Identify Safe Betting Platforms</h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            With so many <strong className="text-foreground">online betting websites</strong> out there, finding <strong className="text-foreground">safe online sports betting websites 2026</strong> is crucial. Look for platforms with encrypted transactions, fast payouts, transparent odds and responsive support — like Khelo24App.live.
+            With so many online betting websites out there, finding safe platforms is crucial. Look for platforms with encrypted transactions, fast payouts, transparent odds and responsive support — like Khelo24App.live.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Our <strong className="text-foreground">online sports gaming platform</strong> uses end-to-end encryption for all chats and transactions. Every deposit and withdrawal is processed through verified banking channels. This is what makes us one of the most trusted <strong className="text-foreground">sports betting platform online</strong> options in India.
+            Our platform uses end-to-end encryption for all chats and transactions. Every deposit and withdrawal is processed through verified banking channels. This is what makes us one of the most trusted betting options in India.
           </p>
         </section>
 
@@ -45,7 +45,7 @@ const BlogSafeBetting = () => {
           <div className="space-y-3">
             <div className="p-4 rounded-xl bg-card/50 border border-border">
               <h3 className="font-bold mb-1">✅ Encrypted Transactions</h3>
-              <p className="text-sm text-muted-foreground">All payments on our <strong>live sports betting site</strong> are secured with banking-grade encryption.</p>
+              <p className="text-sm text-muted-foreground">All payments on our platform are secured with banking-grade encryption.</p>
             </div>
             <div className="p-4 rounded-xl bg-card/50 border border-border">
               <h3 className="font-bold mb-1">✅ Fast Withdrawals (Under 5 Minutes)</h3>
@@ -53,11 +53,11 @@ const BlogSafeBetting = () => {
             </div>
             <div className="p-4 rounded-xl bg-card/50 border border-border">
               <h3 className="font-bold mb-1">✅ 24x7 Customer Support</h3>
-              <p className="text-sm text-muted-foreground">Reliable support shows trust. Our <strong>mobile friendly sports betting platforms</strong> offers WhatsApp help round the clock.</p>
+              <p className="text-sm text-muted-foreground">Reliable support shows trust. Our platform offers WhatsApp help round the clock.</p>
             </div>
             <div className="p-4 rounded-xl bg-card/50 border border-border">
               <h3 className="font-bold mb-1">✅ Transparent Odds & Fair Play</h3>
-              <p className="text-sm text-muted-foreground">No hidden charges, no manipulated odds. Play fair on this <strong>online betting website</strong>.</p>
+              <p className="text-sm text-muted-foreground">No hidden charges, no manipulated odds. Play fair on our platform.</p>
             </div>
           </div>
         </section>
@@ -65,7 +65,7 @@ const BlogSafeBetting = () => {
         <section className="mb-10">
           <h2 className="text-xl md:text-2xl font-bold mb-3">Why Khelo24App Is Safe</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Khelo24App.live has been serving Indian players with a clean track record. Our <strong className="text-foreground">sports gaming app online</strong> platform prioritizes player safety above everything. Join thousands of happy players who trust us daily.
+            Khelo24App.live has been serving Indian players with a clean track record. Our platform prioritizes player safety above everything. Join thousands of happy players who trust us daily.
           </p>
         </section>
 

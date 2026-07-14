@@ -83,10 +83,10 @@ const Cricket = () => {
         <div className="mt-10 max-w-3xl">
           <h2 className="text-xl md:text-2xl font-bold mb-3">Your Complete Cricket Betting Guide</h2>
           <p className="text-muted-foreground leading-relaxed mb-3">
-            Khelo24App.live is among the <strong className="text-foreground">best cricket prediction sites online</strong> where you get <strong className="text-foreground">live cricket betting tips online</strong> powered by data-driven analysis. Our <strong className="text-foreground">khelo24app online platform</strong> covers IPL, T20 World Cup, Asia Cup and all international matches with the best odds.
+            Khelo24App.live is among the best cricket prediction sites where you get live cricket betting tips powered by data-driven analysis. Our platform covers IPL, T20 World Cup, Asia Cup and all international matches with the best odds.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Learn <strong className="text-foreground">how to bet on live cricket matches online</strong> with our step-by-step guides and start winning today. As a <strong className="text-foreground">safe online sports betting website</strong>, we ensure every transaction is encrypted and withdrawals are processed in under 5 minutes. Get your <strong className="text-foreground">free cricket ID</strong> now and experience the best <strong className="text-foreground">sports betting platform online</strong>.
+            Learn how to bet on live cricket matches with our step-by-step guides and start winning today. As a safe betting website, we ensure every transaction is encrypted and withdrawals are processed in under 5 minutes. Get your free cricket ID now and experience the best sports betting platform.
           </p>
         </div>
       </section>
