@@ -36,7 +36,7 @@ export const FAQ = () => (
         {FAQS.map((f, i) => (
           <AccordionItem key={i} value={`item-${i}`} className="bg-card/50 border border-border rounded-lg px-4">
             <AccordionTrigger className="text-left font-semibold hover:no-underline">{f.q}</AccordionTrigger>
-            <AccordionContent className="text-muted-foreground">{f.a}</AccordionContent>
+            <AccordionContent forceMount className="text-muted-foreground">{f.a}</AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>

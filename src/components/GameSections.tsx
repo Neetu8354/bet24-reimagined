@@ -1,4 +1,4 @@
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { Play, Flame } from "lucide-react";
 import { Link } from "react-router-dom";
 import cardFantasy from "@/assets/card-fantasy.jpg";
@@ -12,19 +12,19 @@ import cardLeader from "@/assets/card-leaderboard.jpg";
 type Game = { img: string; title: string; tag: string; hot?: boolean; alt?: string; to?: string };
 
 const CRICKET: Game[] = [
-  { img: cardLive, title: "Live IPL Match", tag: "LIVE NOW", hot: true, alt: "Live IPL cricket match betting odds on Khelo24App" },
-  { img: cardFantasy, title: "Fantasy XI", tag: "Win ₹10L", alt: "Fantasy cricket XI team selection game on Khelo24App" },
-  { img: cardPred, title: "Match Predictions", tag: "Daily Quiz", alt: "Cricket match predictions and daily quiz on Khelo24App" },
-  { img: cardLeader, title: "Leaderboards", tag: "Top 100", hot: true, alt: "Leaderboards showing top 100 players on Khelo24App" },
+  { img: cardLive, title: "Live IPL Match", tag: "LIVE NOW", hot: true, alt: "Live IPL cricket match betting odds on Khelo24App", to: "/cricket" },
+  { img: cardFantasy, title: "Fantasy XI", tag: "Win ₹10L", alt: "Fantasy cricket XI team selection game on Khelo24App", to: "/cricket" },
+  { img: cardPred, title: "Match Predictions", tag: "Daily Quiz", alt: "Cricket match predictions and daily quiz on Khelo24App", to: "/cricket" },
+  { img: cardLeader, title: "Leaderboards", tag: "Top 100", hot: true, alt: "Leaderboards showing top 100 players on Khelo24App", to: "/cricket" },
 ];
 
 const CASINO: Game[] = [
-  { img: cardAndar, title: "Andar Bahar", tag: "₹10 - ₹5L", hot: true, alt: "Andar Bahar live casino game on Khelo24App" },
-  { img: cardTeen, title: "Teen Patti", tag: "Live Dealer", hot: true, alt: "Teen Patti live dealer card game on Khelo24App" },
-  { img: cardRoulette, title: "Lightning Roulette", tag: "500x", alt: "Lightning Roulette live casino game on Khelo24App" },
-  { img: cardAndar, title: "Dragon Tiger", tag: "Fast Paced", alt: "Dragon Tiger fast-paced card game on Khelo24App" },
-  { img: cardTeen, title: "32 Cards", tag: "Indian Live", alt: "32 Cards Indian live casino game on Khelo24App" },
-  { img: cardRoulette, title: "Auto Roulette", tag: "24/7", alt: "Auto Roulette 24/7 live casino game on Khelo24App" },
+  { img: cardAndar, title: "Andar Bahar", tag: "₹10 - ₹5L", hot: true, alt: "Andar Bahar live casino game on Khelo24App", to: "/teen-patti" },
+  { img: cardTeen, title: "Teen Patti", tag: "Live Dealer", hot: true, alt: "Teen Patti live dealer card game on Khelo24App", to: "/teen-patti" },
+  { img: cardRoulette, title: "Lightning Roulette", tag: "500x", alt: "Lightning Roulette live casino game on Khelo24App", to: "/teen-patti" },
+  { img: cardAndar, title: "Dragon Tiger", tag: "Fast Paced", alt: "Dragon Tiger fast-paced card game on Khelo24App", to: "/teen-patti" },
+  { img: cardTeen, title: "32 Cards", tag: "Indian Live", alt: "32 Cards Indian live casino game on Khelo24App", to: "/teen-patti" },
+  { img: cardRoulette, title: "Auto Roulette", tag: "24/7", alt: "Auto Roulette 24/7 live casino game on Khelo24App", to: "/teen-patti" },
 ];
 
 const Card = ({ g }: { g: Game }) => {
@@ -62,9 +62,9 @@ const Card = ({ g }: { g: Game }) => {
   }
 
   return (
-    <button onClick={openWA} className="group relative overflow-hidden rounded-xl bg-gradient-card border border-border hover:border-primary/60 transition-smooth shadow-card hover:shadow-glow text-left w-full">
+    <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="group relative overflow-hidden rounded-xl bg-gradient-card border border-border hover:border-primary/60 transition-smooth shadow-card hover:shadow-glow text-left w-full">
       {cardContent}
-    </button>
+    </a>
   );
 };
 
@@ -79,7 +79,7 @@ const Section = ({ title, sub, games }: { title: string; sub: string; games: Gam
         </h2>
         <p className="text-sm text-muted-foreground mt-1">{sub}</p>
       </div>
-      <button onClick={openWA} className="hidden md:block text-sm font-semibold text-primary hover:underline">View all →</button>
+      <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="hidden md:block text-sm font-semibold text-primary hover:underline">View all →</a>
     </div>
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
       {games.map((g, i) => <Card key={i} g={g} />)}
