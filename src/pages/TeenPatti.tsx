@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
@@ -28,14 +28,16 @@ const TeenPatti = () => {
         <p className="text-muted-foreground max-w-2xl mb-10">India's favourite card game — play live with real dealers, 24/7 in INR.</p>
 
         <div className="grid md:grid-cols-2 gap-8 items-center mb-14">
-          <img src={cardTeen} alt="bet on gameplay interface with khelo24app.live" className="rounded-xl border border-border w-full aspect-video object-cover" loading="lazy" />
+          <img src={cardTeen} alt="Teen Patti card game interface showing live dealer and betting table on Khelo24App" className="rounded-xl border border-border w-full aspect-video object-cover" loading="lazy" />
           <div>
             <h2 className="text-xl md:text-2xl font-bold mb-4">Rules and Strategies</h2>
             <p className="text-muted-foreground mb-3">Teen Patti is a 3-card poker game. Each player gets three cards, and the goal is to have the best hand. Rankings go from Trail (three of a kind) at the top to High Card at the bottom.</p>
-            <h3 className="font-bold mb-2 text-sm">Bet on Gameplay Interface with Khelo24App.live</h3>
-            <p className="text-muted-foreground text-sm mb-4">Our smooth interface lets you place bets quickly, view live dealer cards, and track your winnings in real time.</p>
-            <Button onClick={openWA} className="bg-gradient-gold text-gold-foreground font-bold">
-              <MessageCircle className="h-4 w-4 mr-2" /> Play Teen Patti Now
+            <h3 className="font-bold mb-2 text-sm">Smooth Teen Patti Interface</h3>
+            <p className="text-muted-foreground text-sm mb-4">Our intuitive interface lets you place bets quickly, view live dealer cards, and track your winnings in real time.</p>
+            <Button asChild className="bg-gradient-gold text-gold-foreground font-bold">
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-4 w-4 mr-2" /> Play Teen Patti Now
+              </a>
             </Button>
           </div>
         </div>
@@ -43,10 +45,10 @@ const TeenPatti = () => {
         <div className="max-w-3xl">
           <h2 className="text-xl md:text-2xl font-bold mb-3">Play Teen Patti on Khelo24App.live</h2>
           <p className="text-muted-foreground leading-relaxed mb-3">
-            <strong className="text-foreground">Teen Patti online</strong> on <strong className="text-foreground">khelo24app.live</strong> brings India's favourite card game to your fingertips. Our <strong className="text-foreground">khelo24app online platform</strong> features live dealers, instant deposits via UPI, and <strong className="text-foreground">fast withdrawal betting</strong> so you never have to wait for your winnings.
+            <strong className="text-foreground">Teen Patti online</strong> on <strong className="text-foreground">khelo24app.live</strong> brings India's favourite card game to your fingertips. Our platform features professional live dealers, instant UPI deposits starting from ₹100, and rapid withdrawals so you can enjoy your winnings without delay.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            As one of the <strong className="text-foreground">safe online sports betting websites 2026</strong>, we offer a <strong className="text-foreground">mobile friendly sports betting platform</strong> where you can enjoy Teen Patti 24/7 in Hindi, English, Telugu and Tamil. Get your <strong className="text-foreground">free cricket ID</strong> and access all games including Teen Patti, Andar Bahar, and more.
+            Experience authentic Teen Patti with multiple betting tables, side bets, and real-time chat features. Play 24/7 in Hindi, English, Telugu and Tamil with verified fair gameplay and round-the-clock WhatsApp support.
           </p>
         </div>
       </section>

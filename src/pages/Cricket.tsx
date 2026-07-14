@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, TrendingUp, Trophy, BarChart3 } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
@@ -23,23 +23,22 @@ const Cricket = () => {
     keywords: "live cricket betting, cricket betting online, khelo24app cricket, best cricket odds",
   });
 
-  const sportsEventSchema = {
+  const webPageSchema = {
     "@context": "https://schema.org",
-    "@type": "SportsEvent",
+    "@type": "WebPage",
     name: "Live Cricket Betting on Khelo24App.live",
     description: "Bet on live cricket matches online including IPL, T20 World Cup, ODI and all major tournaments with the best odds.",
     url: "https://khelo24app.live/cricket",
-    location: {
-      "@type": "VirtualLocation",
-      url: "https://khelo24app.live/cricket",
+    mainEntity: {
+      "@type": "Service",
+      name: "Cricket Betting Service",
+      description: "Online cricket betting with competitive odds and fast payouts",
+      provider: {
+        "@type": "Organization",
+        name: "Khelo24App.live",
+        url: "https://khelo24app.live",
+      },
     },
-    organizer: {
-      "@type": "Organization",
-      name: "Khelo24App.live",
-      url: "https://khelo24app.live",
-    },
-    sport: "Cricket",
-    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
   };
 
   return (
@@ -48,7 +47,7 @@ const Cricket = () => {
       <BreadcrumbNav items={[{ label: "Home", href: "/" }, { label: "Cricket Betting" }]} />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(sportsEventSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
       <section className="container py-12 md:py-20">
         <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-4">
@@ -57,12 +56,14 @@ const Cricket = () => {
         <p className="text-muted-foreground max-w-2xl mb-10">Bet on live cricket matches online with the best odds and fastest payouts in India.</p>
 
         <div className="grid md:grid-cols-2 gap-8 items-center mb-14">
-          <img src={cardLive} alt="bet on gameplay interface with khelo24app.live" className="rounded-xl border border-border w-full aspect-video object-cover" loading="lazy" />
+          <img src={cardLive} alt="Live cricket betting interface showing IPL match odds and live scores on Khelo24App" className="rounded-xl border border-border w-full aspect-video object-cover" loading="lazy" />
           <div>
             <h2 className="text-xl md:text-2xl font-bold mb-4">How to Bet on Live Cricket Matches Online</h2>
-            <p className="text-muted-foreground mb-4">Simply open WhatsApp, get your free cricket ID, deposit via UPI and start placing bets on live matches. It takes under 60 seconds to get started.</p>
-            <Button onClick={openWA} className="bg-gradient-gold text-gold-foreground font-bold">
-              <MessageCircle className="h-4 w-4 mr-2" /> Get Cricket ID Now
+            <p className="text-muted-foreground mb-4">Get your free cricket ID via WhatsApp in under 60 seconds. Deposit via UPI and start betting on live IPL, T20 World Cup, and ODI matches instantly.</p>
+            <Button asChild className="bg-gradient-gold text-gold-foreground font-bold">
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-4 w-4 mr-2" /> Get Cricket ID Now
+              </a>
             </Button>
           </div>
         </div>

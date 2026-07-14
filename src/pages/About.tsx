@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Smartphone, Zap, Headphones, MessageCircle } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
@@ -64,21 +64,23 @@ const About = () => {
         </div>
 
         <div className="mt-12">
-          <img src={aboutImg} alt="best betting platform in india. Join now and play fast khelo24app.live" className="rounded-xl border border-border w-full max-w-3xl mx-auto aspect-video object-cover mb-8" loading="lazy" />
+          <img src={aboutImg} alt="Khelo24App.live platform interface showing cricket betting, casino games, and WhatsApp support features" className="rounded-xl border border-border w-full max-w-3xl mx-auto aspect-video object-cover mb-8" loading="lazy" />
 
           <div className="max-w-3xl mx-auto mb-8">
             <h2 className="text-xl md:text-2xl font-bold mb-3">Why Khelo24App.live Is the Best Choice</h2>
             <p className="text-muted-foreground leading-relaxed mb-3">
-              As one of the top <strong className="text-foreground">safe online sports betting websites 2026</strong>, Khelo24App.live offers a complete <strong className="text-foreground">khelo24app online platform</strong> experience. From <strong className="text-foreground">live cricket betting</strong> to <strong className="text-foreground">Aviator crash game</strong> and <strong className="text-foreground">Teen Patti online</strong>, every game is designed for Indian players.
+              Khelo24App.live stands out as a trusted Indian gaming platform with comprehensive features. From live cricket betting with real-time odds to popular casino games like Teen Patti and Aviator, we offer diverse entertainment options tailored for Indian players.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Our platform stands out among <strong className="text-foreground">mobile friendly sports betting platforms</strong> with instant UPI deposits, <strong className="text-foreground">fast withdrawal betting</strong> in under 5 minutes, and a <strong className="text-foreground">free cricket ID</strong> delivered via WhatsApp. Whether you search for <strong className="text-foreground">how to join khelo24app online</strong> or the <strong className="text-foreground">best cricket prediction sites online</strong>, you'll find everything you need right here.
+              Our platform excels with instant UPI deposits starting from ₹100, withdrawals processed in under 5 minutes, and dedicated WhatsApp support in multiple languages. Whether you're new to online gaming or an experienced player, Khelo24App.live provides a secure, user-friendly environment with verified fair gameplay.
             </p>
           </div>
 
           <div className="text-center">
-            <Button onClick={openWA} size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold">
-              <MessageCircle className="h-5 w-5 mr-2" /> Join Now on WhatsApp
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold">
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-5 w-5 mr-2" /> Join Now on WhatsApp
+              </a>
             </Button>
           </div>
         </div>

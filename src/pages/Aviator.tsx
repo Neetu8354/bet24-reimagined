@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
-import { openWA } from "@/lib/wa";
+import { openWA, WA_LINK } from "@/lib/wa";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Rocket, Target, Gift } from "lucide-react";
 import { useSeo } from "@/hooks/use-seo";
@@ -35,8 +35,8 @@ const Aviator = () => {
         <p className="text-muted-foreground max-w-2xl mb-10">The most exciting crash game — place your bet, watch the multiplier rise, and cash out before it crashes!</p>
 
         <div className="grid md:grid-cols-2 gap-4 mb-8">
-          <img src={aviatorImg} alt="how to win aviator 10x with khelo24app.live" className="rounded-xl border border-border w-full aspect-video object-cover" loading="lazy" />
-          <img src={aviatorImg2} alt="play now and get rewards with khelo24app.live" className="rounded-xl border border-border w-full aspect-video object-cover" loading="lazy" />
+          <img src={aviatorImg} alt="Aviator crash game interface showing plane taking off with multiplier tracking on Khelo24App" className="rounded-xl border border-border w-full aspect-video object-cover" loading="lazy" />
+          <img src={aviatorImg2} alt="Aviator game dashboard showing betting history and cash out statistics on Khelo24App" className="rounded-xl border border-border w-full aspect-video object-cover" loading="lazy" />
         </div>
 
         <h2 className="text-xl md:text-2xl font-bold mb-6">How to Play Aviator</h2>
@@ -56,17 +56,19 @@ const Aviator = () => {
         <div className="bg-card/50 border border-border rounded-2xl p-6 md:p-10 text-center max-w-2xl mx-auto mb-10">
           <h3 className="text-lg md:text-xl font-bold mb-2">How to Win Aviator 10x with Khelo24App.live</h3>
           <p className="text-muted-foreground text-sm mb-6">Master the timing, use our live stats dashboard, and join thousands of winners every day.</p>
-          <Button onClick={openWA} size="lg" className="bg-gradient-gold text-gold-foreground font-bold">
-            <MessageCircle className="h-5 w-5 mr-2" /> Play Aviator Now
+          <Button asChild size="lg" className="bg-gradient-gold text-gold-foreground font-bold">
+            <a href={WA_LINK} target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="h-5 w-5 mr-2" /> Play Aviator Now
+            </a>
           </Button>
         </div>
 
         <div className="max-w-3xl mx-auto">
           <p className="text-muted-foreground leading-relaxed mb-3">
-            The <strong className="text-foreground">Aviator crash game</strong> on <strong className="text-foreground">khelo24app.live</strong> is one of the most popular instant-win games in India. Our <strong className="text-foreground">khelo24app online platform</strong> offers real-time multiplier tracking, auto cash-out features, and provably fair gameplay that makes us stand out among <strong className="text-foreground">safe online sports betting websites 2026</strong>.
+            The <strong className="text-foreground">Aviator crash game</strong> on <strong className="text-foreground">khelo24app.live</strong> offers thrilling instant-win gameplay with provably fair mechanics. Watch real-time statistics, track multipliers, and use auto cash-out features to maximize your winnings.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            Whether you're a beginner learning how to play or a pro chasing 100x multipliers, Khelo24App.live delivers the best Aviator experience on any <strong className="text-foreground">mobile friendly sports betting platform</strong>. With <strong className="text-foreground">fast withdrawal betting</strong> and 24x7 support, you can play confidently and cash out instantly.
+            Perfect for both beginners and experienced players, our Aviator game features live chat, detailed betting history, and instant withdrawals. Join thousands of players winning daily with multipliers reaching 100x and beyond.
           </p>
         </div>
       </section>
