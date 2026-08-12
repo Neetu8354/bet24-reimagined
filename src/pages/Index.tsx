@@ -12,6 +12,7 @@ import { PaymentBar } from "@/components/PaymentBar";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { BonusPopup } from "@/components/BonusPopup";
 import { useSeo } from "@/hooks/use-seo";
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
 
   return (
     <main>
+      <BonusPopup />
       <Header />
       <HeroSlider />
       <StatsBar />
