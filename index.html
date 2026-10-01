@@ -31,10 +31,42 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Khelo24App.live",
-      "url": "https://khelo24app.live/",
-      "description": "Best online sports gaming platform in India. Free cricket ID, live cricket betting, Aviator, Teen Patti with fast withdrawals and 24x7 support."
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://khelo24app.live/#organization",
+          "name": "Khelo24App.live",
+          "url": "https://khelo24app.live/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://khelo24app.live/favicon.png",
+            "width": 512,
+            "height": 512
+          },
+          "description": "India's trusted sports gaming platform. Free cricket ID, live cricket betting, Aviator, Teen Patti with fast withdrawals and 24x7 support.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": "https://wa.link/reddyanna_",
+            "availableLanguage": ["English", "Hindi", "Telugu", "Tamil"],
+            "hoursAvailable": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "00:00",
+              "closes": "23:59"
+            }
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://khelo24app.live/#website",
+          "name": "Khelo24App.live",
+          "url": "https://khelo24app.live/",
+          "description": "Best online sports gaming platform in India. Free cricket ID, live cricket betting, Aviator, Teen Patti with fast withdrawals and 24x7 support.",
+          "inLanguage": "en-IN",
+          "publisher": { "@id": "https://khelo24app.live/#organization" }
+        }
+      ]
     }
     </script>
 
