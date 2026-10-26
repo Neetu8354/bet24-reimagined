@@ -61,6 +61,8 @@ const FAQS = [
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@id": "https://www.khelo24app.live/aviator#faq",
+  url: "https://www.khelo24app.live/aviator",
   mainEntity: FAQS.map((f) => ({
     "@type": "Question",
     name: f.q,
